@@ -37,8 +37,8 @@ public class IndraB2cActivity extends AppCompatActivity {
 
     }
 
-   /* public void dailyClicked (View view){
-        // Launch the VHF Equipment Room Activity
+   public void dailyClicked (View view){
+        // Launch the Automation Daily Activity
 
         Intent intent = new Intent(getApplicationContext(),AutomationIndraB2cDaily.class);
         startActivity(intent);
@@ -47,16 +47,16 @@ public class IndraB2cActivity extends AppCompatActivity {
     }
 
     public void ups15kvaClicked (View view){
-        // Launch the DVR Equipment Room Activity
+        // Launch the Automation 15 KVA UPS Activity
         Intent intent = new Intent(getApplicationContext(),AutomationIndraB2cUPS15KVA.class);
-        startActivity(intent);
+       startActivity(intent);
 
 
     }
 
     public void ups5kvaClicked (View view){
-        Intent intent = new Intent(getApplicationContext(),AutomationUPS5kvaDailyActivity.class);
-        startActivity(intent);
+       // Intent intent = new Intent(getApplicationContext(),AutomationUPS5kvaDailyActivity.class);
+       // startActivity(intent);
 
     }
 
@@ -87,7 +87,7 @@ public class IndraB2cActivity extends AppCompatActivity {
 
 
 
-    }*/
+    }
 
     public void miscellaneousClicked (View view){
         // Launch the Others Equipment Room Activity
