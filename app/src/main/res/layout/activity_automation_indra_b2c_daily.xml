@@ -127,8 +127,8 @@
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:textAlignment="center"
                     android:text="TWR ATS AUTOMATION (MAKE: INDRA)"
+                    android:textAlignment="center"
                     android:textColor="@color/teal_700"
                     android:textSize="16sp"
                     android:textStyle="bold" />
@@ -142,8 +142,8 @@
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:textAlignment="center"
                     android:text="PREVENTIVE MAINTENANCE SCHEDULE- DAILY"
+                    android:textAlignment="center"
                     android:textColor="@color/teal_700"
                     android:textSize="16sp"
                     android:textStyle="bold" />
@@ -158,10 +158,10 @@
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:layout_weight=".15"
-                    android:text="Station:"
                     android:gravity="center|left"
+                    android:text="Station:"
                     android:textColor="@color/textViewColor"
-                    android:textSize="14sp"/>
+                    android:textSize="14sp" />
 
                 <EditText
                     android:id="@+id/editText1"
@@ -169,9 +169,9 @@
                     android:layout_height="match_parent"
                     android:layout_weight=".45"
                     android:ems="10"
-                    android:inputType="text"
                     android:hint="Enter Station Name"
-                    android:textSize="14sp"/>
+                    android:inputType="text"
+                    android:textSize="14sp" />
 
                 <TextView
                     android:layout_width="0dp"
@@ -192,11 +192,11 @@
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="I. Tech Sup Position"
                     android:gravity="center|left"
+                    android:text="I. Tech Sup Position"
                     android:textColor="@color/teal_700"
                     android:textSize="16sp"
-                    android:textStyle="bold"/>
+                    android:textStyle="bold" />
 
             </LinearLayout>
 
@@ -208,11 +208,11 @@
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Analyze the CMD system Messages Log, Event Files \u0026 take corrective action"
                     android:gravity="center|left"
+                    android:text="Analyze the CMD system Messages Log, Event Files \u0026 take corrective action"
                     android:textColor="@color/teal_700"
                     android:textSize="16sp"
-                    android:textStyle="bold"/>
+                    android:textStyle="bold" />
 
             </LinearLayout>
 
@@ -235,8 +235,8 @@
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:layout_weight=".30"
-                    android:textColor="@color/textViewColor"
-                    android:text="" />
+                    android:text=""
+                    android:textColor="@color/textViewColor" />
 
 
             </LinearLayout>
@@ -251,28 +251,28 @@
                     android:layout_height="48dp"
                     android:layout_weight=".09"
                     android:text="S.No"
-                    android:textStyle="bold"
                     android:textColor="@color/teal_700"
-                    android:textSize="14sp" />
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
 
                 <TextView
                     android:layout_width="0dp"
                     android:layout_height="48dp"
                     android:layout_weight=".46"
-                    android:textAlignment="textStart"
                     android:text="Parameters "
-                    android:textStyle="bold"
+                    android:textAlignment="textStart"
                     android:textColor="@color/teal_700"
-                    android:textSize="16sp" />
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
 
                 <TextView
                     android:layout_width="0dp"
                     android:layout_height="48dp"
                     android:layout_weight=".45"
                     android:text="Observed Indication (Color/Status)/ Remarks "
-                    android:textStyle="bold"
                     android:textColor="@color/teal_700"
-                    android:textSize="16sp" />
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
 
             </LinearLayout>
 
@@ -286,9 +286,9 @@
                     android:layout_height="match_parent"
                     android:text=" i) External Links"
                     android:textAlignment="viewStart"
-                    android:textStyle="bold"
                     android:textColor="@color/teal_700"
-                    android:textSize="16sp" />
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
 
             </LinearLayout>
 
@@ -303,9 +303,9 @@
                     android:layout_weight=".275"
                     android:text="Sensor /Line"
                     android:textAlignment="textStart"
-                    android:textStyle="bold"
                     android:textColor="@color/textViewColor"
-                    android:textSize="14sp" />
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
 
                 <TextView
                     android:layout_width="0dp"
@@ -313,9 +313,9 @@
                     android:layout_weight=".725"
                     android:text="Service Provider"
                     android:textAlignment="textStart"
-                    android:textStyle="bold"
                     android:textColor="@color/textViewColor"
-                    android:textSize="14sp" />
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
 
             </LinearLayout>
 
@@ -331,9 +331,9 @@
                     android:layout_weight=".275"
                     android:ems="10"
                     android:gravity="center"
+                    android:hint="Radar 1"
                     android:inputType="text"
-                    android:textSize="14sp"
-                    android:hint="Radar 1"/>
+                    android:textSize="14sp" />
 
                 <LinearLayout
                     android:layout_width="0dp"
@@ -346,18 +346,18 @@
                         android:layout_width="match_parent"
                         android:layout_height="48dp"
                         android:ems="10"
+                        android:hint="Link 1"
                         android:inputType="text"
-                        android:textSize="14sp"
-                        android:hint="Link 1"/>
+                        android:textSize="14sp" />
 
                     <EditText
                         android:id="@+id/editText4"
                         android:layout_width="match_parent"
                         android:layout_height="48dp"
                         android:ems="10"
+                        android:hint="Link 2"
                         android:inputType="text"
-                        android:textSize="14sp"
-                        android:hint="Link 2"/>
+                        android:textSize="14sp" />
                 </LinearLayout>
 
                 <LinearLayout
@@ -371,14 +371,14 @@
                         android:layout_width="match_parent"
                         android:layout_height="48dp"
                         android:layout_weight=".45"
-                        android:entries="@array/AutomationDailyRadarLinkStatus"/>
+                        android:entries="@array/AutomationDailyRadarLinkStatus" />
 
                     <Spinner
                         android:id="@+id/spinner2"
                         android:layout_width="match_parent"
                         android:layout_height="48dp"
                         android:layout_weight=".45"
-                        android:entries="@array/AutomationDailyRadarLinkStatus"/>
+                        android:entries="@array/AutomationDailyRadarLinkStatus" />
                 </LinearLayout>
 
             </LinearLayout>
@@ -395,9 +395,9 @@
                     android:layout_weight=".275"
                     android:ems="10"
                     android:gravity="center"
+                    android:hint="Radar 2"
                     android:inputType="text"
-                    android:textSize="14sp"
-                    android:hint="Radar 2"/>
+                    android:textSize="14sp" />
 
                 <LinearLayout
                     android:layout_width="0dp"
@@ -410,18 +410,18 @@
                         android:layout_width="match_parent"
                         android:layout_height="48dp"
                         android:ems="10"
+                        android:hint="Link 1"
                         android:inputType="text"
-                        android:textSize="14sp"
-                        android:hint="Link 1"/>
+                        android:textSize="14sp" />
 
                     <EditText
                         android:id="@+id/editText7"
                         android:layout_width="match_parent"
                         android:layout_height="48dp"
                         android:ems="10"
+                        android:hint="Link 2"
                         android:inputType="text"
-                        android:textSize="14sp"
-                        android:hint="Link 2"/>
+                        android:textSize="14sp" />
                 </LinearLayout>
 
                 <LinearLayout
@@ -435,14 +435,14 @@
                         android:layout_width="match_parent"
                         android:layout_height="48dp"
                         android:layout_weight=".45"
-                        android:entries="@array/AutomationDailyRadarLinkStatus"/>
+                        android:entries="@array/AutomationDailyRadarLinkStatus" />
 
                     <Spinner
                         android:id="@+id/spinner4"
                         android:layout_width="match_parent"
                         android:layout_height="48dp"
                         android:layout_weight=".45"
-                        android:entries="@array/AutomationDailyRadarLinkStatus"/>
+                        android:entries="@array/AutomationDailyRadarLinkStatus" />
                 </LinearLayout>
             </LinearLayout>
 
@@ -458,9 +458,9 @@
                     android:layout_weight=".275"
                     android:ems="10"
                     android:gravity="center"
+                    android:hint="Radar 3"
                     android:inputType="text"
-                    android:textSize="14sp"
-                    android:hint="Radar 3"/>
+                    android:textSize="14sp" />
 
                 <LinearLayout
                     android:layout_width="0dp"
@@ -473,18 +473,18 @@
                         android:layout_width="match_parent"
                         android:layout_height="48dp"
                         android:ems="10"
+                        android:hint="Link 1"
                         android:inputType="text"
-                        android:textSize="14sp"
-                        android:hint="Link 1"/>
+                        android:textSize="14sp" />
 
                     <EditText
                         android:id="@+id/editText10"
                         android:layout_width="match_parent"
                         android:layout_height="48dp"
                         android:ems="10"
+                        android:hint="Link 2"
                         android:inputType="text"
-                        android:textSize="14sp"
-                        android:hint="Link 2"/>
+                        android:textSize="14sp" />
                 </LinearLayout>
 
                 <LinearLayout
@@ -498,14 +498,14 @@
                         android:layout_width="match_parent"
                         android:layout_height="48dp"
                         android:layout_weight=".45"
-                        android:entries="@array/AutomationDailyRadarLinkStatus"/>
+                        android:entries="@array/AutomationDailyRadarLinkStatus" />
 
                     <Spinner
                         android:id="@+id/spinner6"
                         android:layout_width="match_parent"
                         android:layout_height="48dp"
                         android:layout_weight=".45"
-                        android:entries="@array/AutomationDailyRadarLinkStatus"/>
+                        android:entries="@array/AutomationDailyRadarLinkStatus" />
                 </LinearLayout>
             </LinearLayout>
 
@@ -521,9 +521,9 @@
                     android:layout_weight=".275"
                     android:ems="10"
                     android:gravity="center"
+                    android:hint="Radar 4"
                     android:inputType="text"
-                    android:textSize="14sp"
-                    android:hint="Radar 4"/>
+                    android:textSize="14sp" />
 
                 <LinearLayout
                     android:layout_width="0dp"
@@ -536,18 +536,18 @@
                         android:layout_width="match_parent"
                         android:layout_height="48dp"
                         android:ems="10"
+                        android:hint="Link 1"
                         android:inputType="text"
-                        android:textSize="14sp"
-                        android:hint="Link 1"/>
+                        android:textSize="14sp" />
 
                     <EditText
                         android:id="@+id/editText13"
                         android:layout_width="match_parent"
                         android:layout_height="48dp"
                         android:ems="10"
+                        android:hint="Link 2"
                         android:inputType="text"
-                        android:textSize="14sp"
-                        android:hint="Link 2"/>
+                        android:textSize="14sp" />
                 </LinearLayout>
 
                 <LinearLayout
@@ -561,14 +561,14 @@
                         android:layout_width="match_parent"
                         android:layout_height="48dp"
                         android:layout_weight=".45"
-                        android:entries="@array/AutomationDailyRadarLinkStatus"/>
+                        android:entries="@array/AutomationDailyRadarLinkStatus" />
 
                     <Spinner
                         android:id="@+id/spinner8"
                         android:layout_width="match_parent"
                         android:layout_height="48dp"
                         android:layout_weight=".45"
-                        android:entries="@array/AutomationDailyRadarLinkStatus"/>
+                        android:entries="@array/AutomationDailyRadarLinkStatus" />
                 </LinearLayout>
             </LinearLayout>
 
@@ -584,9 +584,9 @@
                     android:layout_weight=".275"
                     android:ems="10"
                     android:gravity="center"
+                    android:hint="Radar 5"
                     android:inputType="text"
-                    android:textSize="14sp"
-                    android:hint="Radar 5"/>
+                    android:textSize="14sp" />
 
                 <LinearLayout
                     android:layout_width="0dp"
@@ -599,18 +599,18 @@
                         android:layout_width="match_parent"
                         android:layout_height="48dp"
                         android:ems="10"
+                        android:hint="Link 1"
                         android:inputType="text"
-                        android:textSize="14sp"
-                        android:hint="Link 1"/>
+                        android:textSize="14sp" />
 
                     <EditText
                         android:id="@+id/editText16"
                         android:layout_width="match_parent"
                         android:layout_height="48dp"
                         android:ems="10"
+                        android:hint="Link 2"
                         android:inputType="text"
-                        android:textSize="14sp"
-                        android:hint="Link 2"/>
+                        android:textSize="14sp" />
                 </LinearLayout>
 
                 <LinearLayout
@@ -624,14 +624,14 @@
                         android:layout_width="match_parent"
                         android:layout_height="48dp"
                         android:layout_weight=".45"
-                        android:entries="@array/AutomationDailyRadarLinkStatus"/>
+                        android:entries="@array/AutomationDailyRadarLinkStatus" />
 
                     <Spinner
                         android:id="@+id/spinner10"
                         android:layout_width="match_parent"
                         android:layout_height="48dp"
                         android:layout_weight=".45"
-                        android:entries="@array/AutomationDailyRadarLinkStatus"/>
+                        android:entries="@array/AutomationDailyRadarLinkStatus" />
                 </LinearLayout>
 
             </LinearLayout>
@@ -648,9 +648,9 @@
                     android:layout_weight=".275"
                     android:ems="10"
                     android:gravity="center"
+                    android:hint="Radar 6"
                     android:inputType="text"
-                    android:textSize="14sp"
-                    android:hint="Radar 6"/>
+                    android:textSize="14sp" />
 
                 <LinearLayout
                     android:layout_width="0dp"
@@ -663,18 +663,18 @@
                         android:layout_width="match_parent"
                         android:layout_height="48dp"
                         android:ems="10"
+                        android:hint="Link 1"
                         android:inputType="text"
-                        android:textSize="14sp"
-                        android:hint="Link 1"/>
+                        android:textSize="14sp" />
 
                     <EditText
                         android:id="@+id/editText19"
                         android:layout_width="match_parent"
                         android:layout_height="48dp"
                         android:ems="10"
+                        android:hint="Link 2"
                         android:inputType="text"
-                        android:textSize="14sp"
-                        android:hint="Link 2"/>
+                        android:textSize="14sp" />
                 </LinearLayout>
 
                 <LinearLayout
@@ -688,14 +688,14 @@
                         android:layout_width="match_parent"
                         android:layout_height="48dp"
                         android:layout_weight=".45"
-                        android:entries="@array/AutomationDailyRadarLinkStatus"/>
+                        android:entries="@array/AutomationDailyRadarLinkStatus" />
 
                     <Spinner
                         android:id="@+id/spinner12"
                         android:layout_width="match_parent"
                         android:layout_height="48dp"
                         android:layout_weight=".45"
-                        android:entries="@array/AutomationDailyRadarLinkStatus"/>
+                        android:entries="@array/AutomationDailyRadarLinkStatus" />
                 </LinearLayout>
             </LinearLayout>
 
@@ -711,9 +711,9 @@
                     android:layout_weight=".275"
                     android:ems="10"
                     android:gravity="center"
+                    android:hint="Radar 7"
                     android:inputType="text"
-                    android:textSize="14sp"
-                    android:hint="Radar 7"/>
+                    android:textSize="14sp" />
 
                 <LinearLayout
                     android:layout_width="0dp"
@@ -726,18 +726,18 @@
                         android:layout_width="match_parent"
                         android:layout_height="48dp"
                         android:ems="10"
+                        android:hint="Link 1"
                         android:inputType="text"
-                        android:textSize="14sp"
-                        android:hint="Link 1"/>
+                        android:textSize="14sp" />
 
                     <EditText
                         android:id="@+id/editText22"
                         android:layout_width="match_parent"
                         android:layout_height="48dp"
                         android:ems="10"
+                        android:hint="Link 2"
                         android:inputType="text"
-                        android:textSize="14sp"
-                        android:hint="Link 2"/>
+                        android:textSize="14sp" />
                 </LinearLayout>
 
                 <LinearLayout
@@ -751,14 +751,14 @@
                         android:layout_width="match_parent"
                         android:layout_height="48dp"
                         android:layout_weight=".45"
-                        android:entries="@array/AutomationDailyRadarLinkStatus"/>
+                        android:entries="@array/AutomationDailyRadarLinkStatus" />
 
                     <Spinner
                         android:id="@+id/spinner14"
                         android:layout_width="match_parent"
                         android:layout_height="48dp"
                         android:layout_weight=".45"
-                        android:entries="@array/AutomationDailyRadarLinkStatus"/>
+                        android:entries="@array/AutomationDailyRadarLinkStatus" />
                 </LinearLayout>
             </LinearLayout>
 
@@ -774,9 +774,9 @@
                     android:layout_weight=".275"
                     android:ems="10"
                     android:gravity="center"
+                    android:hint="Radar 8"
                     android:inputType="text"
-                    android:textSize="14sp"
-                    android:hint="Radar 8"/>
+                    android:textSize="14sp" />
 
                 <LinearLayout
                     android:layout_width="0dp"
@@ -789,18 +789,18 @@
                         android:layout_width="match_parent"
                         android:layout_height="48dp"
                         android:ems="10"
+                        android:hint="Link 1"
                         android:inputType="text"
-                        android:textSize="14sp"
-                        android:hint="Link 1"/>
+                        android:textSize="14sp" />
 
                     <EditText
                         android:id="@+id/editText25"
                         android:layout_width="match_parent"
                         android:layout_height="48dp"
                         android:ems="10"
+                        android:hint="Link 2"
                         android:inputType="text"
-                        android:textSize="14sp"
-                        android:hint="Link 2"/>
+                        android:textSize="14sp" />
                 </LinearLayout>
 
                 <LinearLayout
@@ -814,14 +814,14 @@
                         android:layout_width="match_parent"
                         android:layout_height="48dp"
                         android:layout_weight=".45"
-                        android:entries="@array/AutomationDailyRadarLinkStatus"/>
+                        android:entries="@array/AutomationDailyRadarLinkStatus" />
 
                     <Spinner
                         android:id="@+id/spinner16"
                         android:layout_width="match_parent"
                         android:layout_height="48dp"
                         android:layout_weight=".45"
-                        android:entries="@array/AutomationDailyRadarLinkStatus"/>
+                        android:entries="@array/AutomationDailyRadarLinkStatus" />
                 </LinearLayout>
             </LinearLayout>
 
@@ -837,9 +837,9 @@
                     android:layout_weight=".275"
                     android:ems="10"
                     android:gravity="center"
+                    android:hint="AFTN LINE"
                     android:inputType="text"
-                    android:textSize="14sp"
-                    android:hint="AFTN LINE"/>
+                    android:textSize="14sp" />
 
                 <LinearLayout
                     android:layout_width="0dp"
@@ -852,18 +852,18 @@
                         android:layout_width="match_parent"
                         android:layout_height="48dp"
                         android:ems="10"
+                        android:hint="Link 1"
                         android:inputType="text"
-                        android:textSize="14sp"
-                        android:hint="Link 1"/>
+                        android:textSize="14sp" />
 
                     <EditText
                         android:id="@+id/editText28"
                         android:layout_width="match_parent"
                         android:layout_height="48dp"
                         android:ems="10"
+                        android:hint="Link 2"
                         android:inputType="text"
-                        android:textSize="14sp"
-                        android:hint="Link 2"/>
+                        android:textSize="14sp" />
                 </LinearLayout>
 
                 <LinearLayout
@@ -877,14 +877,14 @@
                         android:layout_width="match_parent"
                         android:layout_height="48dp"
                         android:layout_weight=".45"
-                        android:entries="@array/AutomationDailyRadarLinkStatus"/>
+                        android:entries="@array/AutomationDailyRadarLinkStatus" />
 
                     <Spinner
                         android:id="@+id/spinner18"
                         android:layout_width="match_parent"
                         android:layout_height="48dp"
                         android:layout_weight=".45"
-                        android:entries="@array/AutomationDailyRadarLinkStatus"/>
+                        android:entries="@array/AutomationDailyRadarLinkStatus" />
                 </LinearLayout>
 
             </LinearLayout>
@@ -899,9 +899,9 @@
                     android:layout_height="match_parent"
                     android:text=" ii) Status of LAN"
                     android:textAlignment="viewStart"
-                    android:textStyle="bold"
                     android:textColor="@color/teal_700"
-                    android:textSize="16sp" />
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
 
             </LinearLayout>
 
@@ -924,7 +924,7 @@
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:layout_weight=".45"
-                    android:entries="@array/AutomationDailyLAN1"/>
+                    android:entries="@array/AutomationDailyLAN1" />
 
             </LinearLayout>
 
@@ -947,7 +947,7 @@
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:layout_weight=".45"
-                    android:entries="@array/AutomationDailyLAN2"/>
+                    android:entries="@array/AutomationDailyLAN2" />
 
             </LinearLayout>
 
@@ -970,7 +970,7 @@
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:layout_weight=".45"
-                    android:entries="@array/AutomationDailyLAN3"/>
+                    android:entries="@array/AutomationDailyLAN3" />
 
             </LinearLayout>
 
@@ -984,9 +984,9 @@
                     android:layout_height="match_parent"
                     android:text=" iii) Servers"
                     android:textAlignment="viewStart"
-                    android:textStyle="bold"
                     android:textColor="@color/teal_700"
-                    android:textSize="16sp" />
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
 
             </LinearLayout>
 
@@ -1009,7 +1009,7 @@
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:layout_weight=".45"
-                    android:entries="@array/AutomationDailyRDCU_DRF_CMD"/>
+                    android:entries="@array/AutomationDailyRDCU_DRF_CMD" />
 
             </LinearLayout>
 
@@ -1032,7 +1032,7 @@
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:layout_weight=".45"
-                    android:entries="@array/AutomationDailyRDCU_DRF_CMD"/>
+                    android:entries="@array/AutomationDailyRDCU_DRF_CMD" />
 
             </LinearLayout>
 
@@ -1055,7 +1055,7 @@
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:layout_weight=".45"
-                    android:entries="@array/AutomationDailyRDCU_DRF_CMD"/>
+                    android:entries="@array/AutomationDailyRDCU_DRF_CMD" />
 
             </LinearLayout>
 
@@ -1078,7 +1078,7 @@
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:layout_weight=".45"
-                    android:entries="@array/AutomationDailyNeptuno"/>
+                    android:entries="@array/AutomationDailyNeptuno" />
 
             </LinearLayout>
 
@@ -1101,7 +1101,7 @@
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:layout_weight=".45"
-                    android:entries="@array/AutomationDailyNeptuno"/>
+                    android:entries="@array/AutomationDailyNeptuno" />
 
             </LinearLayout>
 
@@ -1124,7 +1124,7 @@
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:layout_weight=".45"
-                    android:entries="@array/AutomationDailySDP_FDP_SNET"/>
+                    android:entries="@array/AutomationDailySDP_FDP_SNET" />
 
             </LinearLayout>
 
@@ -1147,7 +1147,7 @@
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:layout_weight=".45"
-                    android:entries="@array/AutomationDailySDP_FDP_SNET"/>
+                    android:entries="@array/AutomationDailySDP_FDP_SNET" />
 
             </LinearLayout>
 
@@ -1170,7 +1170,7 @@
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:layout_weight=".45"
-                    android:entries="@array/AutomationDailySDP_FDP_SNET"/>
+                    android:entries="@array/AutomationDailySDP_FDP_SNET" />
 
             </LinearLayout>
 
@@ -1193,7 +1193,7 @@
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:layout_weight=".45"
-                    android:entries="@array/AutomationDailySDP_FDP_SNET"/>
+                    android:entries="@array/AutomationDailySDP_FDP_SNET" />
 
             </LinearLayout>
 
@@ -1216,7 +1216,7 @@
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:layout_weight=".45"
-                    android:entries="@array/AutomationDailySDP_FDP_SNET"/>
+                    android:entries="@array/AutomationDailySDP_FDP_SNET" />
 
             </LinearLayout>
 
@@ -1239,7 +1239,7 @@
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:layout_weight=".45"
-                    android:entries="@array/AutomationDailySDP_FDP_SNET"/>
+                    android:entries="@array/AutomationDailySDP_FDP_SNET" />
 
             </LinearLayout>
 
@@ -1262,7 +1262,7 @@
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:layout_weight=".45"
-                    android:entries="@array/AutomationDailyRDCU_DRF_CMD"/>
+                    android:entries="@array/AutomationDailyRDCU_DRF_CMD" />
 
             </LinearLayout>
 
@@ -1285,7 +1285,7 @@
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:layout_weight=".45"
-                    android:entries="@array/AutomationDailyRDCU_DRF_CMD"/>
+                    android:entries="@array/AutomationDailyRDCU_DRF_CMD" />
 
             </LinearLayout>
 
@@ -1299,9 +1299,9 @@
                     android:layout_height="match_parent"
                     android:text=" iv) Workstations"
                     android:textAlignment="viewStart"
-                    android:textStyle="bold"
                     android:textColor="@color/teal_700"
-                    android:textSize="16sp" />
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
 
             </LinearLayout>
 
@@ -1323,11 +1323,11 @@
                     android:id="@+id/editText29"
                     android:layout_width="0dp"
                     android:layout_height="48dp"
-                    android:ems="10"
                     android:layout_weight=".45"
+                    android:ems="10"
+                    android:hint="All Normal (Green)"
                     android:inputType="text"
-                    android:textSize="14sp"
-                    android:hint="All Normal (Green)"/>
+                    android:textSize="14sp" />
 
             </LinearLayout>
 
@@ -1350,7 +1350,7 @@
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:layout_weight=".45"
-                    android:entries="@array/AutomationDailyRDCU_DRF_CMD"/>
+                    android:entries="@array/AutomationDailyRDCU_DRF_CMD" />
 
             </LinearLayout>
 
@@ -1373,7 +1373,7 @@
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:layout_weight=".45"
-                    android:entries="@array/AutomationDailyRDCU_DRF_CMD"/>
+                    android:entries="@array/AutomationDailyRDCU_DRF_CMD" />
 
             </LinearLayout>
 
@@ -1387,9 +1387,9 @@
                     android:layout_height="match_parent"
                     android:text=" v) Printers"
                     android:textAlignment="viewStart"
-                    android:textStyle="bold"
                     android:textColor="@color/teal_700"
-                    android:textSize="16sp" />
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
 
             </LinearLayout>
 
@@ -1411,11 +1411,11 @@
                     android:id="@+id/editText30"
                     android:layout_width="0dp"
                     android:layout_height="48dp"
-                    android:ems="10"
                     android:layout_weight=".45"
+                    android:ems="10"
+                    android:hint="Working Normal (Green)"
                     android:inputType="text"
-                    android:textSize="14sp"
-                    android:hint="Working Normal (Green)"/>
+                    android:textSize="14sp" />
 
             </LinearLayout>
 
@@ -1429,9 +1429,9 @@
                     android:layout_height="match_parent"
                     android:text=" vi) Neptuno Supervisor"
                     android:textAlignment="viewStart"
-                    android:textStyle="bold"
                     android:textColor="@color/teal_700"
-                    android:textSize="16sp" />
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
 
             </LinearLayout>
 
@@ -1453,11 +1453,11 @@
                     android:id="@+id/editText31"
                     android:layout_width="0dp"
                     android:layout_height="48dp"
-                    android:ems="10"
                     android:layout_weight=".45"
+                    android:ems="10"
+                    android:hint="No Alert active"
                     android:inputType="text"
-                    android:textSize="14sp"
-                    android:hint="No Alert active"/>
+                    android:textSize="14sp" />
 
             </LinearLayout>
 
@@ -1479,11 +1479,11 @@
                     android:id="@+id/editText32"
                     android:layout_width="0dp"
                     android:layout_height="48dp"
-                    android:ems="10"
                     android:layout_weight=".45"
+                    android:ems="10"
+                    android:hint="No Alert active"
                     android:inputType="text"
-                    android:textSize="14sp"
-                    android:hint="No Alert active"/>
+                    android:textSize="14sp" />
 
             </LinearLayout>
 
@@ -1505,11 +1505,11 @@
                     android:id="@+id/editText33"
                     android:layout_width="0dp"
                     android:layout_height="48dp"
-                    android:ems="10"
                     android:layout_weight=".45"
+                    android:ems="10"
+                    android:hint="Normal for Both Neptuno\nServers"
                     android:inputType="text"
-                    android:textSize="12sp"
-                    android:hint="Normal for Both Neptuno\nServers"/>
+                    android:textSize="12sp" />
 
             </LinearLayout>
 
@@ -1523,9 +1523,9 @@
                     android:layout_height="match_parent"
                     android:text=" vii) DRF Recording"
                     android:textAlignment="viewStart"
-                    android:textStyle="bold"
                     android:textColor="@color/teal_700"
-                    android:textSize="16sp" />
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
 
             </LinearLayout>
 
@@ -1547,11 +1547,11 @@
                     android:id="@+id/editText34"
                     android:layout_width="0dp"
                     android:layout_height="48dp"
-                    android:ems="10"
                     android:layout_weight=".45"
+                    android:ems="10"
+                    android:hint="OK"
                     android:inputType="text"
-                    android:textSize="14sp"
-                    android:hint="OK"/>
+                    android:textSize="14sp" />
 
             </LinearLayout>
 
@@ -1573,11 +1573,11 @@
                     android:id="@+id/editText35"
                     android:layout_width="0dp"
                     android:layout_height="48dp"
-                    android:ems="10"
                     android:layout_weight=".45"
+                    android:ems="10"
+                    android:hint="OK"
                     android:inputType="text"
-                    android:textSize="14sp"
-                    android:hint="OK"/>
+                    android:textSize="14sp" />
 
             </LinearLayout>
 
@@ -1589,22 +1589,22 @@
                 <TextView
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
+                    android:layout_weight=".55"
                     android:text=" viii) Air conditioner status"
                     android:textAlignment="viewStart"
-                    android:layout_weight=".55"
-                    android:textStyle="bold"
                     android:textColor="@color/teal_700"
-                    android:textSize="16sp" />
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
 
                 <EditText
                     android:id="@+id/editText36"
                     android:layout_width="0dp"
                     android:layout_height="48dp"
-                    android:ems="10"
                     android:layout_weight=".45"
+                    android:ems="10"
+                    android:hint="All ACs working normal"
                     android:inputType="text"
-                    android:textSize="14sp"
-                    android:hint="All ACs working normal"/>
+                    android:textSize="14sp" />
 
             </LinearLayout>
 
@@ -1616,12 +1616,12 @@
                 <TextView
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
+                    android:layout_weight=".55"
                     android:text=" ix) Room Temperature"
                     android:textAlignment="viewStart"
-                    android:layout_weight=".55"
-                    android:textStyle="bold"
                     android:textColor="@color/teal_700"
-                    android:textSize="16sp" />
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
 
                 <EditText
                     android:id="@+id/editText37"
@@ -1643,22 +1643,22 @@
                 <TextView
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
+                    android:layout_weight=".55"
                     android:text=" x) All Workstations cleanliness"
                     android:textAlignment="viewStart"
-                    android:layout_weight=".55"
-                    android:textStyle="bold"
                     android:textColor="@color/teal_700"
-                    android:textSize="16sp" />
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
 
                 <EditText
                     android:id="@+id/editText38"
                     android:layout_width="0dp"
                     android:layout_height="48dp"
-                    android:ems="10"
                     android:layout_weight=".45"
+                    android:ems="10"
+                    android:hint="OK/ Not OK"
                     android:inputType="text"
-                    android:textSize="14sp"
-                    android:hint="OK/ Not OK"/>
+                    android:textSize="14sp" />
 
             </LinearLayout>
 
@@ -1670,22 +1670,22 @@
                 <TextView
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
+                    android:layout_weight=".55"
                     android:text=" xi) DataBase name, Date \u0026 Time of Loading"
                     android:textAlignment="viewStart"
-                    android:layout_weight=".55"
-                    android:textStyle="bold"
                     android:textColor="@color/teal_700"
-                    android:textSize="16sp" />
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
 
                 <EditText
                     android:id="@+id/editText39"
                     android:layout_width="0dp"
                     android:layout_height="48dp"
-                    android:ems="10"
                     android:layout_weight=".45"
+                    android:ems="10"
+                    android:hint="Database Name"
                     android:inputType="text"
-                    android:textSize="14sp"
-                    android:hint="Database Name"/>
+                    android:textSize="14sp" />
 
             </LinearLayout>
 
@@ -1697,11 +1697,11 @@
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="II. Server room"
                     android:gravity="center|left"
+                    android:text="II. Server room"
                     android:textColor="@color/teal_700"
                     android:textSize="16sp"
-                    android:textStyle="bold"/>
+                    android:textStyle="bold" />
 
             </LinearLayout>
 
@@ -1723,11 +1723,11 @@
                     android:id="@+id/editText40"
                     android:layout_width="0dp"
                     android:layout_height="48dp"
-                    android:ems="10"
                     android:layout_weight=".45"
+                    android:ems="10"
+                    android:hint="OK"
                     android:inputType="text"
-                    android:textSize="14sp"
-                    android:hint="OK"/>
+                    android:textSize="14sp" />
 
             </LinearLayout>
 
@@ -1749,11 +1749,11 @@
                     android:id="@+id/editText41"
                     android:layout_width="0dp"
                     android:layout_height="48dp"
-                    android:ems="10"
                     android:layout_weight=".45"
+                    android:ems="10"
+                    android:hint="\u003C 25\u00BA Celcius"
                     android:inputType="text"
-                    android:textSize="14sp"
-                    android:hint="\u003C 25\u00BA Celcius"/>
+                    android:textSize="14sp" />
 
             </LinearLayout>
 
@@ -1775,11 +1775,11 @@
                     android:id="@+id/editText42"
                     android:layout_width="0dp"
                     android:layout_height="48dp"
-                    android:ems="10"
                     android:layout_weight=".45"
+                    android:ems="10"
+                    android:hint="20\u0025 to 80\u0025"
                     android:inputType="text"
-                    android:textSize="14sp"
-                    android:hint="20\u0025 to 80\u0025"/>
+                    android:textSize="14sp" />
 
             </LinearLayout>
 
@@ -1801,11 +1801,11 @@
                     android:id="@+id/editText43"
                     android:layout_width="0dp"
                     android:layout_height="48dp"
-                    android:ems="10"
                     android:layout_weight=".45"
+                    android:ems="10"
+                    android:hint="OK"
                     android:inputType="text"
-                    android:textSize="14sp"
-                    android:hint="OK"/>
+                    android:textSize="14sp" />
 
             </LinearLayout>
 
@@ -1827,11 +1827,11 @@
                     android:id="@+id/editText44"
                     android:layout_width="0dp"
                     android:layout_height="48dp"
-                    android:ems="10"
                     android:layout_weight=".45"
+                    android:ems="10"
+                    android:hint="All AC working normal"
                     android:inputType="text"
-                    android:textSize="14sp"
-                    android:hint="All AC working normal"/>
+                    android:textSize="14sp" />
 
             </LinearLayout>
 
@@ -1845,9 +1845,9 @@
                     android:layout_height="match_parent"
                     android:text=" i) Status of System health LED of Server"
                     android:textAlignment="viewStart"
-                    android:textStyle="bold"
                     android:textColor="@color/teal_700"
-                    android:textSize="16sp" />
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
 
             </LinearLayout>
 
@@ -1869,11 +1869,11 @@
                     android:id="@+id/editText45"
                     android:layout_width="0dp"
                     android:layout_height="48dp"
-                    android:ems="10"
                     android:layout_weight=".45"
+                    android:ems="10"
+                    android:hint="Green"
                     android:inputType="text"
-                    android:textSize="14sp"
-                    android:hint="Green"/>
+                    android:textSize="14sp" />
 
             </LinearLayout>
 
@@ -1895,11 +1895,11 @@
                     android:id="@+id/editText46"
                     android:layout_width="0dp"
                     android:layout_height="48dp"
-                    android:ems="10"
                     android:layout_weight=".45"
+                    android:ems="10"
+                    android:hint="Green"
                     android:inputType="text"
-                    android:textSize="14sp"
-                    android:hint="Green"/>
+                    android:textSize="14sp" />
 
             </LinearLayout>
 
@@ -1921,11 +1921,11 @@
                     android:id="@+id/editText47"
                     android:layout_width="0dp"
                     android:layout_height="48dp"
-                    android:ems="10"
                     android:layout_weight=".45"
+                    android:ems="10"
+                    android:hint="Green"
                     android:inputType="text"
-                    android:textSize="14sp"
-                    android:hint="Green"/>
+                    android:textSize="14sp" />
 
             </LinearLayout>
 
@@ -1947,11 +1947,11 @@
                     android:id="@+id/editText48"
                     android:layout_width="0dp"
                     android:layout_height="48dp"
-                    android:ems="10"
                     android:layout_weight=".45"
+                    android:ems="10"
+                    android:hint="Green"
                     android:inputType="text"
-                    android:textSize="14sp"
-                    android:hint="Green"/>
+                    android:textSize="14sp" />
 
             </LinearLayout>
 
@@ -1973,11 +1973,11 @@
                     android:id="@+id/editText49"
                     android:layout_width="0dp"
                     android:layout_height="48dp"
-                    android:ems="10"
                     android:layout_weight=".45"
+                    android:ems="10"
+                    android:hint="Green"
                     android:inputType="text"
-                    android:textSize="14sp"
-                    android:hint="Green"/>
+                    android:textSize="14sp" />
 
             </LinearLayout>
 
@@ -1999,11 +1999,11 @@
                     android:id="@+id/editText50"
                     android:layout_width="0dp"
                     android:layout_height="48dp"
-                    android:ems="10"
                     android:layout_weight=".45"
+                    android:ems="10"
+                    android:hint="Green"
                     android:inputType="text"
-                    android:textSize="14sp"
-                    android:hint="Green"/>
+                    android:textSize="14sp" />
 
             </LinearLayout>
 
@@ -2025,11 +2025,11 @@
                     android:id="@+id/editText51"
                     android:layout_width="0dp"
                     android:layout_height="48dp"
-                    android:ems="10"
                     android:layout_weight=".45"
+                    android:ems="10"
+                    android:hint="Green"
                     android:inputType="text"
-                    android:textSize="14sp"
-                    android:hint="Green"/>
+                    android:textSize="14sp" />
 
             </LinearLayout>
 
@@ -2043,9 +2043,9 @@
                     android:layout_height="match_parent"
                     android:text=" ii) Status of LAN Switches"
                     android:textAlignment="viewStart"
-                    android:textStyle="bold"
                     android:textColor="@color/teal_700"
-                    android:textSize="16sp" />
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
 
             </LinearLayout>
 
@@ -2067,11 +2067,11 @@
                     android:id="@+id/editText52"
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
-                    android:ems="10"
                     android:layout_weight=".45"
+                    android:ems="10"
+                    android:hint="Power LED ON and RPS LED\nON and LAN connections\nindications are blinking and\nMODE LED is green"
                     android:inputType="text"
-                    android:textSize="12sp"
-                    android:hint="Power LED ON and RPS LED\nON and LAN connections\nindications are blinking and\nMODE LED is green"/>
+                    android:textSize="12sp" />
 
             </LinearLayout>
 
@@ -2093,11 +2093,11 @@
                     android:id="@+id/editText53"
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
-                    android:ems="10"
                     android:layout_weight=".45"
+                    android:ems="10"
+                    android:hint="Power LED ON and No alarm"
                     android:inputType="text"
-                    android:textSize="12sp"
-                    android:hint="Power LED ON and No alarm"/>
+                    android:textSize="12sp" />
 
             </LinearLayout>
 
@@ -2119,11 +2119,11 @@
                     android:id="@+id/editText54"
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
-                    android:ems="10"
                     android:layout_weight=".45"
+                    android:ems="10"
+                    android:hint="Power LED ON and RPS LED\nON and LAN connections\nindications are blinking and\nMODE LED is green"
                     android:inputType="text"
-                    android:textSize="12sp"
-                    android:hint="Power LED ON and RPS LED\nON and LAN connections\nindications are blinking and\nMODE LED is green"/>
+                    android:textSize="12sp" />
 
             </LinearLayout>
 
@@ -2145,11 +2145,11 @@
                     android:id="@+id/editText55"
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
-                    android:ems="10"
                     android:layout_weight=".45"
+                    android:ems="10"
+                    android:hint="Power LED ON and No alarm"
                     android:inputType="text"
-                    android:textSize="12sp"
-                    android:hint="Power LED ON and No alarm"/>
+                    android:textSize="12sp" />
 
             </LinearLayout>
 
@@ -2171,11 +2171,11 @@
                     android:id="@+id/editText56"
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
-                    android:ems="10"
                     android:layout_weight=".45"
+                    android:ems="10"
+                    android:hint="Power LED ON and RPS LED\nON and LAN connections\nindications are blinking and\nMODE LED is green"
                     android:inputType="text"
-                    android:textSize="12sp"
-                    android:hint="Power LED ON and RPS LED\nON and LAN connections\nindications are blinking and\nMODE LED is green"/>
+                    android:textSize="12sp" />
 
             </LinearLayout>
 
@@ -2197,11 +2197,11 @@
                     android:id="@+id/editText57"
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
-                    android:ems="10"
                     android:layout_weight=".45"
+                    android:ems="10"
+                    android:hint="Power LED ON and No alarm"
                     android:inputType="text"
-                    android:textSize="12sp"
-                    android:hint="Power LED ON and No alarm"/>
+                    android:textSize="12sp" />
 
             </LinearLayout>
 
@@ -2215,9 +2215,9 @@
                     android:layout_height="match_parent"
                     android:text=" iii) Status of Tower OFC-LINE"
                     android:textAlignment="viewStart"
-                    android:textStyle="bold"
                     android:textColor="@color/teal_700"
-                    android:textSize="16sp" />
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
 
             </LinearLayout>
 
@@ -2239,11 +2239,11 @@
                     android:id="@+id/editText58"
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
-                    android:ems="10"
                     android:layout_weight=".45"
+                    android:ems="10"
+                    android:hint="Link OK"
                     android:inputType="text"
-                    android:textSize="14sp"
-                    android:hint="Link OK"/>
+                    android:textSize="14sp" />
 
             </LinearLayout>
 
@@ -2265,11 +2265,11 @@
                     android:id="@+id/editText59"
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
-                    android:ems="10"
                     android:layout_weight=".45"
+                    android:ems="10"
+                    android:hint="Link OK"
                     android:inputType="text"
-                    android:textSize="14sp"
-                    android:hint="Link OK"/>
+                    android:textSize="14sp" />
 
             </LinearLayout>
 
@@ -2291,11 +2291,11 @@
                     android:id="@+id/editText60"
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
-                    android:ems="10"
                     android:layout_weight=".45"
+                    android:ems="10"
+                    android:hint="Link OK"
                     android:inputType="text"
-                    android:textSize="14sp"
-                    android:hint="Link OK"/>
+                    android:textSize="14sp" />
 
             </LinearLayout>
 
@@ -2309,9 +2309,9 @@
                     android:layout_height="match_parent"
                     android:text=" iv) Status of Radar Switches"
                     android:textAlignment="viewStart"
-                    android:textStyle="bold"
                     android:textColor="@color/teal_700"
-                    android:textSize="16sp" />
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
 
             </LinearLayout>
 
@@ -2333,11 +2333,11 @@
                     android:id="@+id/editText61"
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
-                    android:ems="10"
                     android:layout_weight=".45"
+                    android:ems="10"
+                    android:hint="Power LED ON and RPS LED\nON and LAN connections\nindications blinking"
                     android:inputType="text"
-                    android:textSize="12sp"
-                    android:hint="Power LED ON and RPS LED\nON and LAN connections\nindications blinking"/>
+                    android:textSize="12sp" />
 
             </LinearLayout>
 
@@ -2359,11 +2359,11 @@
                     android:id="@+id/editText62"
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
-                    android:ems="10"
                     android:layout_weight=".45"
+                    android:ems="10"
+                    android:hint="Power LED ON and RPS LED\nON and LAN connections\nindications blinking"
                     android:inputType="text"
-                    android:textSize="12sp"
-                    android:hint="Power LED ON and RPS LED\nON and LAN connections\nindications blinking"/>
+                    android:textSize="12sp" />
 
             </LinearLayout>
 
@@ -2377,9 +2377,9 @@
                     android:layout_height="match_parent"
                     android:text=" v) Status of External Radar Interface Equipment"
                     android:textAlignment="viewStart"
-                    android:textStyle="bold"
                     android:textColor="@color/teal_700"
-                    android:textSize="16sp" />
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
 
             </LinearLayout>
 
@@ -2401,11 +2401,11 @@
                     android:id="@+id/editText63"
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
-                    android:ems="10"
                     android:layout_weight=".45"
+                    android:ems="10"
+                    android:hint="BSNL MLLN Modem Status\n (Line-1 Green, Power-Green)"
                     android:inputType="text"
-                    android:textSize="12sp"
-                    android:hint="BSNL MLLN Modem Status\n (Line-1 Green, Power-Green)"/>
+                    android:textSize="12sp" />
 
             </LinearLayout>
 
@@ -2427,11 +2427,11 @@
                     android:id="@+id/editText64"
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
-                    android:ems="10"
                     android:layout_weight=".45"
+                    android:ems="10"
+                    android:hint="Both Hard disks LEDs blinking,\nPower-On, Display-Blue"
                     android:inputType="text"
-                    android:textSize="12sp"
-                    android:hint="Both Hard disks LEDs blinking,\nPower-On, Display-Blue"/>
+                    android:textSize="12sp" />
             </LinearLayout>
 
             <LinearLayout
@@ -2452,11 +2452,11 @@
                     android:id="@+id/editText65"
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
-                    android:ems="10"
                     android:layout_weight=".45"
+                    android:ems="10"
+                    android:hint="BSNL MLLN Modem Status\n (Line-1 Green, Power-Green)"
                     android:inputType="text"
-                    android:textSize="12sp"
-                    android:hint="BSNL MLLN Modem Status\n (Line-1 Green, Power-Green)"/>
+                    android:textSize="12sp" />
 
             </LinearLayout>
 
@@ -2478,11 +2478,11 @@
                     android:id="@+id/editText66"
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
-                    android:ems="10"
                     android:layout_weight=".45"
+                    android:ems="10"
+                    android:hint="BSNL MLLN Modem Status\n (Line-1 Green, Power-Green)"
                     android:inputType="text"
-                    android:textSize="12sp"
-                    android:hint="BSNL MLLN Modem Status\n (Line-1 Green, Power-Green)"/>
+                    android:textSize="12sp" />
             </LinearLayout>
 
             <LinearLayout
@@ -2503,11 +2503,11 @@
                     android:id="@+id/editText67"
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
-                    android:ems="10"
                     android:layout_weight=".45"
+                    android:ems="10"
+                    android:hint="Both Hard disks LEDs blinking,\nPower-On, Display-Blue"
                     android:inputType="text"
-                    android:textSize="12sp"
-                    android:hint="Both Hard disks LEDs blinking,\nPower-On, Display-Blue"/>
+                    android:textSize="12sp" />
 
             </LinearLayout>
 
@@ -2529,11 +2529,11 @@
                     android:id="@+id/editText68"
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
-                    android:ems="10"
                     android:layout_weight=".45"
+                    android:ems="10"
+                    android:hint="BSNL MLLN Modem Status\n (Line-1 Green, Power-Green)"
                     android:inputType="text"
-                    android:textSize="12sp"
-                    android:hint="BSNL MLLN Modem Status\n (Line-1 Green, Power-Green)"/>
+                    android:textSize="12sp" />
             </LinearLayout>
 
             <LinearLayout
@@ -2554,11 +2554,11 @@
                     android:id="@+id/editText69"
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
-                    android:ems="10"
                     android:layout_weight=".45"
+                    android:ems="10"
+                    android:hint="Power LED Green"
                     android:inputType="text"
-                    android:textSize="12sp"
-                    android:hint="Power LED Green"/>
+                    android:textSize="12sp" />
             </LinearLayout>
 
             <LinearLayout
@@ -2579,11 +2579,11 @@
                     android:id="@+id/editText70"
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
-                    android:ems="10"
                     android:layout_weight=".45"
+                    android:ems="10"
+                    android:hint="Power LED Green, SYS\n LED Green Blinking"
                     android:inputType="text"
-                    android:textSize="12sp"
-                    android:hint="Power LED Green, SYS\n LED Green Blinking"/>
+                    android:textSize="12sp" />
             </LinearLayout>
 
             <LinearLayout
@@ -2604,11 +2604,11 @@
                     android:id="@+id/editText71"
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
-                    android:ems="10"
                     android:layout_weight=".45"
+                    android:ems="10"
+                    android:hint="Power LED Green, SYS\n LED Green Blinking"
                     android:inputType="text"
-                    android:textSize="12sp"
-                    android:hint="Power LED Green, SYS\n LED Green Blinking"/>
+                    android:textSize="12sp" />
             </LinearLayout>
 
             <LinearLayout
@@ -2629,11 +2629,11 @@
                     android:id="@+id/editText72"
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
-                    android:ems="10"
                     android:layout_weight=".45"
+                    android:ems="10"
+                    android:hint="Pride Fiber Link Rx LED-\nGreen, Meghadoot Fiber Link\n Rx LED-Green"
                     android:inputType="text"
-                    android:textSize="12sp"
-                    android:hint="Pride Fiber Link Rx LED-\nGreen, Meghadoot Fiber Link\n Rx LED-Green"/>
+                    android:textSize="12sp" />
             </LinearLayout>
 
             <LinearLayout
@@ -2646,9 +2646,9 @@
                     android:layout_height="match_parent"
                     android:text=" v) Status of GPS Clock"
                     android:textAlignment="viewStart"
-                    android:textStyle="bold"
                     android:textColor="@color/teal_700"
-                    android:textSize="16sp" />
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
 
             </LinearLayout>
 
@@ -2670,11 +2670,11 @@
                     android:id="@+id/editText73"
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
-                    android:ems="10"
                     android:layout_weight=".45"
+                    android:ems="10"
+                    android:hint="Alarm LED OFF, other LEDs\nGreen, Time Display OK"
                     android:inputType="text"
-                    android:textSize="12sp"
-                    android:hint="Alarm LED OFF, other LEDs\nGreen, Time Display OK"/>
+                    android:textSize="12sp" />
             </LinearLayout>
 
             <LinearLayout
@@ -2695,11 +2695,11 @@
                     android:id="@+id/editText74"
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
-                    android:ems="10"
                     android:layout_weight=".45"
+                    android:ems="10"
+                    android:hint="OK"
                     android:inputType="text"
-                    android:textSize="12sp"
-                    android:hint="OK"/>
+                    android:textSize="12sp" />
             </LinearLayout>
 
             <LinearLayout
@@ -2714,18 +2714,18 @@
                     android:gravity="left|center"
                     android:text="Remarks(Any deviation observed/ Action taken):"
                     android:textColor="@color/textViewColor"
-                    android:textStyle="bold"
-                    android:textSize="14sp" />
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
 
                 <EditText
                     android:id="@+id/editText75"
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
-                    android:ems="10"
                     android:layout_weight=".45"
-                    android:inputType="textMultiLine"
+                    android:ems="10"
                     android:hint="Enter Remark here"
-                    android:textSize="14sp"/>
+                    android:inputType="textMultiLine"
+                    android:textSize="14sp" />
             </LinearLayout>
 
             <GridLayout
@@ -2738,9 +2738,9 @@
                     android:layout_height="wrap_content"
                     android:layout_row="0"
                     android:layout_column="0"
-                    android:gravity="center"
                     android:layout_gravity="center_horizontal"
                     android:backgroundTint="@color/teal_700"
+                    android:gravity="center"
                     android:text="Submit Schedule" />
 
                 <Button
@@ -2749,9 +2749,9 @@
                     android:layout_height="wrap_content"
                     android:layout_row="0"
                     android:layout_column="0"
-                    android:gravity="center"
                     android:layout_gravity="center_horizontal"
                     android:backgroundTint="@color/teal_700"
+                    android:gravity="center"
                     android:text="Sign Document" />
 
             </GridLayout>
@@ -2759,25 +2759,23 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:gravity="center"
                 android:layout_marginTop="8dp"
-                android:layout_marginBottom="10dp">
+                android:layout_marginBottom="10dp"
+                android:gravity="center">
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
-                    android:textStyle="bold|italic"
-                    android:textColor="@color/textViewColor"
                     android:text="Form Created by: Vipin K. Singh"
-                    android:textSize="14sp"/>
+                    android:textColor="@color/textViewColor"
+                    android:textSize="14sp"
+                    android:textStyle="bold|italic" />
 
             </LinearLayout>
 
 
-
         </LinearLayout>
     </ScrollView>
-
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

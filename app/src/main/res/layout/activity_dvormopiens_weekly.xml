@@ -6,7 +6,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:layout_gravity="center_horizontal|center_vertical"
-    tools:context=".DVORMopiensWeeklyActivity">
+    tools:context=".DVORMopiensWeeklyActivity"
+    tools:ignore="MissingClass">
 
     <ScrollView
         android:id="@+id/scrollView"
@@ -30,7 +31,6 @@
                 android:layout_marginTop="5dp">
 
                 <TextView
-                    android:id="@+id/textView1"
                     android:layout_width="0dp"
                     android:layout_height="60dp"
                     android:layout_weight=".4"
@@ -46,11 +46,10 @@
                     app:srcCompat="@drawable/logoaai" />
 
                 <TextView
-                    android:id="@+id/textView2"
                     android:layout_width="0dp"
                     android:layout_height="60dp"
                     android:layout_weight=".4"
-                    android:text="CNS Manual Vol.VII Part 2"
+                    android:text="CNS MANUAL Vol.VII Part 4"
                     android:textAlignment="viewEnd"
                     android:textColor="@color/textViewColor"
                     android:textSize="14sp" />
@@ -60,10 +59,10 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="8dp">
+                android:layout_marginTop="5dp">
 
                 <TextView
-                    android:id="@+id/textView3"
+                    android:id="@+id/textView1"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="Name: "
@@ -79,7 +78,7 @@
                 android:layout_marginTop="2dp">
 
                 <TextView
-                    android:id="@+id/textView4"
+                    android:id="@+id/textView2"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="Desig: "
@@ -95,7 +94,7 @@
                 android:layout_marginTop="2dp">
 
                 <TextView
-                    android:id="@+id/textView5"
+                    android:id="@+id/textView3"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="Emp No.: "
@@ -110,7 +109,7 @@
                 android:layout_marginTop="2dp">
 
                 <TextView
-                    android:id="@+id/textView6"
+                    android:id="@+id/textView4"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="Location: "
@@ -126,7 +125,6 @@
                 android:layout_marginTop="2dp">
 
                 <TextView
-                    android:id="@+id/textView7"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="Preventive Maintenance Schedule - Weekly (DVOR-MARU-220) "
@@ -143,7 +141,6 @@
                 android:layout_marginTop="2dp">
 
                 <TextView
-                    android:id="@+id/textView8"
                     android:layout_width="0dp"
                     android:layout_height="48dp"
                     android:layout_weight=".17"
@@ -162,7 +159,6 @@
                     android:textSize="14sp" />
 
                 <TextView
-                    android:id="@+id/textView9"
                     android:layout_width="0dp"
                     android:layout_height="48dp"
                     android:layout_weight=".2"
@@ -189,7 +185,6 @@
                 android:layout_marginTop="2dp">
 
                 <TextView
-                    android:id="@+id/textView10"
                     android:layout_width="0dp"
                     android:layout_height="48dp"
                     android:layout_weight=".17"
@@ -208,7 +203,6 @@
                     android:textSize="14sp" />
 
                 <TextView
-                    android:id="@+id/textView11"
                     android:layout_width="0dp"
                     android:layout_height="48dp"
                     android:layout_weight=".17"
@@ -228,7 +222,6 @@
                     android:textSize="14sp" />
 
                 <TextView
-                    android:id="@+id/textView12"
                     android:layout_width="0dp"
                     android:layout_height="48dp"
                     android:layout_weight=".17"
@@ -237,15 +230,13 @@
                     android:textColor="@color/textViewColor"
                     android:textSize="14sp" />
 
-
-                <EditText
-                    android:id="@+id/editText5"
+                <TextView
+                    android:id="@+id/textViewDate"
                     android:layout_width="0dp"
                     android:layout_height="48dp"
                     android:layout_weight=".15"
-                    android:ems="10"
-                    android:inputType="date"
-                    android:textSize="14sp" />
+                    android:text=""
+                    android:textColor="@color/textViewColor" />
 
             </LinearLayout>
 
@@ -255,7 +246,6 @@
                 android:layout_marginTop="8dp">
 
                 <TextView
-                    android:id="@+id/textView13"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight=".09"
@@ -265,7 +255,6 @@
                     android:textSize="16sp" />
 
                 <TextView
-                    android:id="@+id/textView14"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight=".91"
@@ -281,7 +270,6 @@
                 android:layout_marginTop="5dp">
 
                 <TextView
-                    android:id="@+id/textView15"
                     android:layout_width="0dp"
                     android:layout_height="48dp"
                     android:layout_weight=".09"
@@ -291,13 +279,46 @@
                     android:textSize="14sp" />
 
                 <TextView
-                    android:id="@+id/textView16"
                     android:layout_width="0dp"
                     android:layout_height="48dp"
                     android:layout_weight=".36"
                     android:text="Time of Observation (in UTC) "
                     android:textColor="@color/textViewColor"
                     android:textSize="14sp" />
+
+                <EditText
+                    android:id="@+id/editText5"
+                    android:layout_width="0dp"
+                    android:layout_height="48dp"
+                    android:layout_weight=".55"
+                    android:ems="10"
+                    android:inputType="text"
+                    android:textSize="14sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="48dp"
+                    android:layout_weight=".09"
+                    android:text="1.2 "
+                    android:textAlignment="center"
+                    android:textColor="@color/textViewColor"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="48dp"
+                    android:layout_weight=".36"
+                    android:text="System Date \u0026 Time (in UTC)"
+                    android:textColor="@color/textViewColor"
+                    android:textSize="14sp" />
+
 
                 <EditText
                     android:id="@+id/editText6"
@@ -316,21 +337,19 @@
                 android:layout_marginTop="5dp">
 
                 <TextView
-                    android:id="@+id/textView17"
                     android:layout_width="0dp"
                     android:layout_height="48dp"
                     android:layout_weight=".09"
-                    android:text="1.2 "
+                    android:text="1.3 "
                     android:textAlignment="center"
                     android:textColor="@color/textViewColor"
                     android:textSize="14sp" />
 
                 <TextView
-                    android:id="@+id/textView18"
                     android:layout_width="0dp"
                     android:layout_height="48dp"
                     android:layout_weight=".36"
-                    android:text="System Date \u0026 Time (in UTC)"
+                    android:text="Time source with which system synchronized"
                     android:textColor="@color/textViewColor"
                     android:textSize="14sp" />
 
@@ -349,46 +368,9 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="5dp">
-
-                <TextView
-                    android:id="@+id/textView19"
-                    android:layout_width="0dp"
-                    android:layout_height="48dp"
-                    android:layout_weight=".09"
-                    android:text="1.3 "
-                    android:textAlignment="center"
-                    android:textColor="@color/textViewColor"
-                    android:textSize="14sp" />
-
-                <TextView
-                    android:id="@+id/textView20"
-                    android:layout_width="0dp"
-                    android:layout_height="48dp"
-                    android:layout_weight=".36"
-                    android:text="Time source with which system synchronized"
-                    android:textColor="@color/textViewColor"
-                    android:textSize="14sp" />
-
-
-                <EditText
-                    android:id="@+id/editText8"
-                    android:layout_width="0dp"
-                    android:layout_height="48dp"
-                    android:layout_weight=".55"
-                    android:ems="10"
-                    android:inputType="text"
-                    android:textSize="14sp" />
-
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
                 android:layout_marginTop="8dp">
 
                 <TextView
-                    android:id="@+id/textView21"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight=".09"
@@ -398,7 +380,6 @@
                     android:textSize="16sp" />
 
                 <TextView
-                    android:id="@+id/textView22"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight=".36"
@@ -408,7 +389,6 @@
                     android:textSize="16sp" />
 
                 <TextView
-                    android:id="@+id/textView23"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight=".275"
@@ -419,7 +399,6 @@
                     android:textSize="16sp" />
 
                 <TextView
-                    android:id="@+id/textView24"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight=".275"
@@ -437,7 +416,6 @@
                 android:layout_marginTop="5dp">
 
                 <TextView
-                    android:id="@+id/textView25"
                     android:layout_width="0dp"
                     android:layout_height="48dp"
                     android:layout_weight=".09"
@@ -447,7 +425,6 @@
                     android:textSize="14sp" />
 
                 <TextView
-                    android:id="@+id/textView26"
                     android:layout_width="0dp"
                     android:layout_height="48dp"
                     android:layout_weight=".36"
@@ -456,7 +433,7 @@
                     android:textSize="14sp" />
 
                 <EditText
-                    android:id="@+id/editText9"
+                    android:id="@+id/editText8"
                     android:layout_width="0dp"
                     android:layout_height="48dp"
                     android:layout_weight=".275"
@@ -465,7 +442,7 @@
                     android:textSize="14sp" />
 
                 <EditText
-                    android:id="@+id/editText10"
+                    android:id="@+id/editText9"
                     android:layout_width="0dp"
                     android:layout_height="48dp"
                     android:layout_weight=".275"
@@ -480,7 +457,6 @@
                 android:layout_marginTop="5dp">
 
                 <TextView
-                    android:id="@+id/textView27"
                     android:layout_width="0dp"
                     android:layout_height="48dp"
                     android:layout_weight=".09"
@@ -490,7 +466,6 @@
                     android:textSize="14sp" />
 
                 <TextView
-                    android:id="@+id/textView28"
                     android:layout_width="0dp"
                     android:layout_height="48dp"
                     android:layout_weight=".36"
@@ -514,7 +489,6 @@
                 </Switch>
 
                 <TextView
-                    android:id="@+id/textView29"
                     android:layout_width="0dp"
                     android:layout_height="48dp"
                     android:layout_weight=".1"
@@ -538,7 +512,6 @@
                 </Switch>
 
                 <TextView
-                    android:id="@+id/textView30"
                     android:layout_width="0dp"
                     android:layout_height="48dp"
                     android:layout_weight=".1"
@@ -554,7 +527,6 @@
                 android:layout_marginTop="5dp">
 
                 <TextView
-                    android:id="@+id/textView31"
                     android:layout_width="0dp"
                     android:layout_height="48dp"
                     android:layout_weight=".09"
@@ -564,7 +536,6 @@
                     android:textSize="14sp" />
 
                 <TextView
-                    android:id="@+id/textView32"
                     android:layout_width="0dp"
                     android:layout_height="48dp"
                     android:layout_weight=".36"
@@ -573,7 +544,7 @@
                     android:textSize="14sp" />
 
                 <EditText
-                    android:id="@+id/editText11"
+                    android:id="@+id/editText10"
                     android:layout_width="0dp"
                     android:layout_height="48dp"
                     android:layout_weight=".275"
@@ -582,7 +553,7 @@
                     android:textSize="14sp" />
 
                 <EditText
-                    android:id="@+id/editText12"
+                    android:id="@+id/editText11"
                     android:layout_width="0dp"
                     android:layout_height="48dp"
                     android:layout_weight=".275"
@@ -599,7 +570,6 @@
                 android:layout_marginTop="5dp">
 
                 <TextView
-                    android:id="@+id/textView33"
                     android:layout_width="0dp"
                     android:layout_height="48dp"
                     android:layout_weight=".09"
@@ -609,7 +579,6 @@
                     android:textSize="14sp" />
 
                 <TextView
-                    android:id="@+id/textView34"
                     android:layout_width="0dp"
                     android:layout_height="48dp"
                     android:layout_weight=".36"
@@ -633,7 +602,6 @@
                 </Switch>
 
                 <TextView
-                    android:id="@+id/textView35"
                     android:layout_width="0dp"
                     android:layout_height="48dp"
                     android:layout_weight=".1"
@@ -657,7 +625,6 @@
                 </Switch>
 
                 <TextView
-                    android:id="@+id/textView36"
                     android:layout_width="0dp"
                     android:layout_height="48dp"
                     android:layout_weight=".1"
@@ -672,7 +639,6 @@
                 android:layout_marginTop="8dp">
 
                 <TextView
-                    android:id="@+id/textView37"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight=".09"
@@ -682,7 +648,6 @@
                     android:textSize="16sp" />
 
                 <TextView
-                    android:id="@+id/textView38"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight=".36"
@@ -692,7 +657,6 @@
                     android:textSize="16sp" />
 
                 <TextView
-                    android:id="@+id/textView39"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight=".55"
@@ -709,7 +673,6 @@
                 android:layout_marginTop="5dp">
 
                 <TextView
-                    android:id="@+id/textView40"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight=".09"
@@ -719,7 +682,6 @@
                     android:textSize="16sp" />
 
                 <TextView
-                    android:id="@+id/textView41"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight=".36"
@@ -730,7 +692,6 @@
                     android:textSize="16sp" />
 
                 <TextView
-                    android:id="@+id/textView42"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight=".275"
@@ -741,7 +702,6 @@
                     android:textSize="16sp" />
 
                 <TextView
-                    android:id="@+id/textView43"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight=".275"
@@ -758,7 +718,6 @@
                 android:layout_marginTop="5dp">
 
                 <TextView
-                    android:id="@+id/textView44"
                     android:layout_width="0dp"
                     android:layout_height="48dp"
                     android:layout_weight=".09"
@@ -768,7 +727,6 @@
                     android:textSize="14sp" />
 
                 <TextView
-                    android:id="@+id/textView45"
                     android:layout_width="0dp"
                     android:layout_height="48dp"
                     android:layout_weight=".36"
@@ -777,7 +735,7 @@
                     android:textSize="14sp" />
 
                 <EditText
-                    android:id="@+id/editText13"
+                    android:id="@+id/editText12"
                     android:layout_width="0dp"
                     android:layout_height="48dp"
                     android:layout_weight=".275"
@@ -786,7 +744,7 @@
                     android:textSize="14sp" />
 
                 <EditText
-                    android:id="@+id/editText14"
+                    android:id="@+id/editText13"
                     android:layout_width="0dp"
                     android:layout_height="48dp"
                     android:layout_weight=".275"
@@ -801,7 +759,6 @@
                 android:layout_marginTop="5dp">
 
                 <TextView
-                    android:id="@+id/textView46"
                     android:layout_width="0dp"
                     android:layout_height="48dp"
                     android:layout_weight=".09"
@@ -811,7 +768,6 @@
                     android:textSize="14sp" />
 
                 <TextView
-                    android:id="@+id/textView47"
                     android:layout_width="0dp"
                     android:layout_height="48dp"
                     android:layout_weight=".36"
@@ -835,7 +791,6 @@
                 </Switch>
 
                 <TextView
-                    android:id="@+id/textView48"
                     android:layout_width="0dp"
                     android:layout_height="48dp"
                     android:layout_weight=".1"
@@ -859,7 +814,6 @@
                 </Switch>
 
                 <TextView
-                    android:id="@+id/textView49"
                     android:layout_width="0dp"
                     android:layout_height="48dp"
                     android:layout_weight=".1"
@@ -875,7 +829,6 @@
                 android:layout_marginTop="5dp">
 
                 <TextView
-                    android:id="@+id/textView50"
                     android:layout_width="0dp"
                     android:layout_height="48dp"
                     android:layout_weight=".09"
@@ -885,7 +838,6 @@
                     android:textSize="14sp" />
 
                 <TextView
-                    android:id="@+id/textView51"
                     android:layout_width="0dp"
                     android:layout_height="48dp"
                     android:layout_weight=".36"
@@ -894,7 +846,7 @@
                     android:textSize="14sp" />
 
                 <EditText
-                    android:id="@+id/editText15"
+                    android:id="@+id/editText14"
                     android:layout_width="0dp"
                     android:layout_height="48dp"
                     android:layout_weight=".275"
@@ -903,7 +855,7 @@
                     android:textSize="14sp" />
 
                 <EditText
-                    android:id="@+id/editText16"
+                    android:id="@+id/editText15"
                     android:layout_width="0dp"
                     android:layout_height="48dp"
                     android:layout_weight=".275"
@@ -920,7 +872,6 @@
                 android:layout_marginTop="5dp">
 
                 <TextView
-                    android:id="@+id/textView52"
                     android:layout_width="0dp"
                     android:layout_height="48dp"
                     android:layout_weight=".09"
@@ -930,7 +881,6 @@
                     android:textSize="14sp" />
 
                 <TextView
-                    android:id="@+id/textView53"
                     android:layout_width="0dp"
                     android:layout_height="48dp"
                     android:layout_weight=".36"
@@ -954,7 +904,6 @@
                 </Switch>
 
                 <TextView
-                    android:id="@+id/textView54"
                     android:layout_width="0dp"
                     android:layout_height="48dp"
                     android:layout_weight=".1"
@@ -978,7 +927,6 @@
                 </Switch>
 
                 <TextView
-                    android:id="@+id/textView55"
                     android:layout_width="0dp"
                     android:layout_height="48dp"
                     android:layout_weight=".1"
@@ -993,7 +941,6 @@
                 android:layout_marginTop="8dp">
 
                 <TextView
-                    android:id="@+id/textView56"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight=".09"
@@ -1003,7 +950,6 @@
                     android:textSize="16sp" />
 
                 <TextView
-                    android:id="@+id/textView57"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight=".91"
@@ -1019,7 +965,6 @@
                 android:layout_marginTop="5dp">
 
                 <TextView
-                    android:id="@+id/textView58"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight=".09"
@@ -1029,7 +974,6 @@
                     android:textSize="16sp" />
 
                 <TextView
-                    android:id="@+id/textView59"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight=".36"
@@ -1040,7 +984,6 @@
                     android:textSize="16sp" />
 
                 <TextView
-                    android:id="@+id/textView60"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight=".55"
@@ -1057,7 +1000,6 @@
                 android:layout_marginTop="5dp">
 
                 <TextView
-                    android:id="@+id/textView61"
                     android:layout_width="0dp"
                     android:layout_height="48dp"
                     android:layout_weight=".09"
@@ -1067,7 +1009,6 @@
                     android:textSize="14sp" />
 
                 <TextView
-                    android:id="@+id/textView62"
                     android:layout_width="0dp"
                     android:layout_height="48dp"
                     android:layout_weight=".36"
@@ -1091,7 +1032,6 @@
                 </Switch>
 
                 <TextView
-                    android:id="@+id/textView63"
                     android:layout_width="0dp"
                     android:layout_height="48dp"
                     android:layout_weight=".2"
@@ -1107,7 +1047,6 @@
                 android:layout_marginTop="5dp">
 
                 <TextView
-                    android:id="@+id/textView64"
                     android:layout_width="0dp"
                     android:layout_height="48dp"
                     android:layout_weight=".09"
@@ -1117,7 +1056,6 @@
                     android:textSize="14sp" />
 
                 <TextView
-                    android:id="@+id/textView65"
                     android:layout_width="0dp"
                     android:layout_height="48dp"
                     android:layout_weight=".36"
@@ -1141,7 +1079,6 @@
                 </Switch>
 
                 <TextView
-                    android:id="@+id/textView66"
                     android:layout_width="0dp"
                     android:layout_height="48dp"
                     android:layout_weight=".2"
@@ -1157,7 +1094,6 @@
                 android:layout_marginTop="5dp">
 
                 <TextView
-                    android:id="@+id/textView67"
                     android:layout_width="0dp"
                     android:layout_height="48dp"
                     android:layout_weight=".09"
@@ -1167,7 +1103,6 @@
                     android:textSize="14sp" />
 
                 <TextView
-                    android:id="@+id/textView68"
                     android:layout_width="0dp"
                     android:layout_height="48dp"
                     android:layout_weight=".36"
@@ -1191,7 +1126,6 @@
                 </Switch>
 
                 <TextView
-                    android:id="@+id/textView69"
                     android:layout_width="0dp"
                     android:layout_height="48dp"
                     android:layout_weight=".2"
@@ -1207,7 +1141,6 @@
                 android:layout_marginTop="8dp">
 
                 <TextView
-                    android:id="@+id/textView70"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight=".09"
@@ -1217,7 +1150,6 @@
                     android:textSize="16sp" />
 
                 <TextView
-                    android:id="@+id/textView71"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight=".36"
@@ -1227,7 +1159,6 @@
                     android:textSize="16sp" />
 
                 <TextView
-                    android:id="@+id/textView72"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight=".275"
@@ -1238,7 +1169,6 @@
                     android:textSize="16sp" />
 
                 <TextView
-                    android:id="@+id/textView73"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight=".275"
@@ -1255,7 +1185,6 @@
                 android:layout_marginTop="5dp">
 
                 <TextView
-                    android:id="@+id/textView74"
                     android:layout_width="0dp"
                     android:layout_height="48dp"
                     android:layout_weight=".09"
@@ -1265,7 +1194,6 @@
                     android:textSize="14sp" />
 
                 <TextView
-                    android:id="@+id/textView75"
                     android:layout_width="0dp"
                     android:layout_height="48dp"
                     android:layout_weight=".36"
@@ -1274,7 +1202,7 @@
                     android:textSize="14sp" />
 
                 <EditText
-                    android:id="@+id/editText17"
+                    android:id="@+id/editText16"
                     android:layout_width="0dp"
                     android:layout_height="48dp"
                     android:layout_weight=".275"
@@ -1284,7 +1212,7 @@
                     android:hint="Nominal \u00B1 1\u00BA"/>
 
                 <EditText
-                    android:id="@+id/editText18"
+                    android:id="@+id/editText17"
                     android:layout_width="0dp"
                     android:layout_height="48dp"
                     android:layout_weight=".275"
@@ -1302,7 +1230,6 @@
                 android:layout_marginTop="5dp">
 
                 <TextView
-                    android:id="@+id/textView76"
                     android:layout_width="0dp"
                     android:layout_height="48dp"
                     android:layout_weight=".09"
@@ -1312,7 +1239,6 @@
                     android:textSize="14sp" />
 
                 <TextView
-                    android:id="@+id/textView77"
                     android:layout_width="0dp"
                     android:layout_height="48dp"
                     android:layout_weight=".36"
@@ -1321,7 +1247,7 @@
                     android:textSize="14sp" />
 
                 <EditText
-                    android:id="@+id/editText19"
+                    android:id="@+id/editText18"
                     android:layout_width="0dp"
                     android:layout_height="48dp"
                     android:layout_weight=".275"
@@ -1331,7 +1257,7 @@
                     android:hint="11 - 17"/>
 
                 <EditText
-                    android:id="@+id/editText20"
+                    android:id="@+id/editText19"
                     android:layout_width="0dp"
                     android:layout_height="48dp"
                     android:layout_weight=".275"
@@ -1347,7 +1273,6 @@
                 android:layout_marginTop="5dp">
 
                 <TextView
-                    android:id="@+id/textView78"
                     android:layout_width="0dp"
                     android:layout_height="48dp"
                     android:layout_weight=".09"
@@ -1357,7 +1282,6 @@
                     android:textSize="14sp" />
 
                 <TextView
-                    android:id="@+id/textView79"
                     android:layout_width="0dp"
                     android:layout_height="48dp"
                     android:layout_weight=".36"
@@ -1366,7 +1290,7 @@
                     android:textSize="14sp" />
 
                 <EditText
-                    android:id="@+id/editText21"
+                    android:id="@+id/editText20"
                     android:layout_width="0dp"
                     android:layout_height="48dp"
                     android:layout_weight=".275"
@@ -1376,7 +1300,7 @@
                     android:hint="30 \u00b1 4.5\u0025"/>
 
                 <EditText
-                    android:id="@+id/editText22"
+                    android:id="@+id/editText21"
                     android:layout_width="0dp"
                     android:layout_height="48dp"
                     android:layout_weight=".275"
@@ -1392,7 +1316,6 @@
                 android:layout_marginTop="5dp">
 
                 <TextView
-                    android:id="@+id/textView80"
                     android:layout_width="0dp"
                     android:layout_height="48dp"
                     android:layout_weight=".09"
@@ -1402,13 +1325,22 @@
                     android:textSize="14sp" />
 
                 <TextView
-                    android:id="@+id/textView81"
                     android:layout_width="0dp"
                     android:layout_height="48dp"
                     android:layout_weight=".36"
                     android:text="9960 Hz Modulation Depth"
                     android:textColor="@color/textViewColor"
                     android:textSize="14sp" />
+
+                <EditText
+                    android:id="@+id/editText22"
+                    android:layout_width="0dp"
+                    android:layout_height="48dp"
+                    android:layout_weight=".275"
+                    android:ems="10"
+                    android:inputType="number"
+                    android:textSize="14sp"
+                    android:hint="30 \u00b1 4.5\u0025"/>
 
                 <EditText
                     android:id="@+id/editText23"
@@ -1420,16 +1352,6 @@
                     android:textSize="14sp"
                     android:hint="30 \u00b1 4.5\u0025"/>
 
-                <EditText
-                    android:id="@+id/editText24"
-                    android:layout_width="0dp"
-                    android:layout_height="48dp"
-                    android:layout_weight=".275"
-                    android:ems="10"
-                    android:inputType="number"
-                    android:textSize="14sp"
-                    android:hint="30 \u00b1 4.5\u0025"/>
-
 
             </LinearLayout>
 
@@ -1439,7 +1361,6 @@
                 android:layout_marginTop="5dp">
 
                 <TextView
-                    android:id="@+id/textView82"
                     android:layout_width="0dp"
                     android:layout_height="48dp"
                     android:layout_weight=".09"
@@ -1449,13 +1370,22 @@
                     android:textSize="14sp" />
 
                 <TextView
-                    android:id="@+id/textView83"
                     android:layout_width="0dp"
                     android:layout_height="48dp"
                     android:layout_weight=".36"
                     android:text="Ident 1020 Hz Modulation Depth"
                     android:textColor="@color/textViewColor"
                     android:textSize="14sp" />
+
+                <EditText
+                    android:id="@+id/editText24"
+                    android:layout_width="0dp"
+                    android:layout_height="48dp"
+                    android:layout_weight=".275"
+                    android:ems="10"
+                    android:inputType="number"
+                    android:textSize="14sp"
+                    android:hint="\u003C 10\u0025"/>
 
                 <EditText
                     android:id="@+id/editText25"
@@ -1466,16 +1396,6 @@
                     android:inputType="number"
                     android:textSize="14sp"
                     android:hint="\u003C 10\u0025"/>
-
-                <EditText
-                    android:id="@+id/editText26"
-                    android:layout_width="0dp"
-                    android:layout_height="48dp"
-                    android:layout_weight=".275"
-                    android:ems="10"
-                    android:inputType="number"
-                    android:textSize="14sp"
-                    android:hint="\u003C 10\u0025"/>
             </LinearLayout>
 
             <LinearLayout
@@ -1484,7 +1404,6 @@
                 android:layout_marginTop="5dp">
 
                 <TextView
-                    android:id="@+id/textView84"
                     android:layout_width="0dp"
                     android:layout_height="48dp"
                     android:layout_weight=".09"
@@ -1494,7 +1413,6 @@
                     android:textSize="14sp" />
 
                 <TextView
-                    android:id="@+id/textView85"
                     android:layout_width="0dp"
                     android:layout_height="48dp"
                     android:layout_weight=".36"
@@ -1518,7 +1436,6 @@
                 </Switch>
 
                 <TextView
-                    android:id="@+id/textView86"
                     android:layout_width="0dp"
                     android:layout_height="48dp"
                     android:layout_weight=".1"
@@ -1542,7 +1459,6 @@
                 </Switch>
 
                 <TextView
-                    android:id="@+id/textView87"
                     android:layout_width="0dp"
                     android:layout_height="48dp"
                     android:layout_weight=".1"
@@ -1558,7 +1474,6 @@
                 android:layout_marginTop="5dp">
 
                 <TextView
-                    android:id="@+id/textView88"
                     android:layout_width="0dp"
                     android:layout_height="48dp"
                     android:layout_weight=".09"
@@ -1568,12 +1483,20 @@
                     android:textSize="14sp" />
 
                 <TextView
-                    android:id="@+id/textView89"
                     android:layout_width="0dp"
                     android:layout_height="48dp"
                     android:layout_weight=".36"
                     android:text="Frequency - Carrier"
                     android:textColor="@color/textViewColor"
+                    android:textSize="14sp" />
+
+                <EditText
+                    android:id="@+id/editText26"
+                    android:layout_width="0dp"
+                    android:layout_height="48dp"
+                    android:layout_weight=".275"
+                    android:ems="10"
+                    android:inputType="text"
                     android:textSize="14sp" />
 
                 <EditText
@@ -1585,15 +1508,6 @@
                     android:inputType="text"
                     android:textSize="14sp" />
 
-                <EditText
-                    android:id="@+id/editText28"
-                    android:layout_width="0dp"
-                    android:layout_height="48dp"
-                    android:layout_weight=".275"
-                    android:ems="10"
-                    android:inputType="text"
-                    android:textSize="14sp" />
-
             </LinearLayout>
 
             <LinearLayout
@@ -1602,7 +1516,6 @@
                 android:layout_marginTop="5dp">
 
                 <TextView
-                    android:id="@+id/textView90"
                     android:layout_width="0dp"
                     android:layout_height="48dp"
                     android:layout_weight=".09"
@@ -1612,12 +1525,20 @@
                     android:textSize="14sp" />
 
                 <TextView
-                    android:id="@+id/textView91"
                     android:layout_width="0dp"
                     android:layout_height="48dp"
                     android:layout_weight=".36"
                     android:text="Frequency - USB"
                     android:textColor="@color/textViewColor"
+                    android:textSize="14sp" />
+
+                <EditText
+                    android:id="@+id/editText28"
+                    android:layout_width="0dp"
+                    android:layout_height="48dp"
+                    android:layout_weight=".275"
+                    android:ems="10"
+                    android:inputType="text"
                     android:textSize="14sp" />
 
                 <EditText
@@ -1629,15 +1550,6 @@
                     android:inputType="text"
                     android:textSize="14sp" />
 
-                <EditText
-                    android:id="@+id/editText30"
-                    android:layout_width="0dp"
-                    android:layout_height="48dp"
-                    android:layout_weight=".275"
-                    android:ems="10"
-                    android:inputType="text"
-                    android:textSize="14sp" />
-
             </LinearLayout>
 
             <LinearLayout
@@ -1646,7 +1558,6 @@
                 android:layout_marginTop="5dp">
 
                 <TextView
-                    android:id="@+id/textView92"
                     android:layout_width="0dp"
                     android:layout_height="48dp"
                     android:layout_weight=".09"
@@ -1656,12 +1567,20 @@
                     android:textSize="14sp" />
 
                 <TextView
-                    android:id="@+id/textView93"
                     android:layout_width="0dp"
                     android:layout_height="48dp"
                     android:layout_weight=".36"
                     android:text="Frequency - LSB"
                     android:textColor="@color/textViewColor"
+                    android:textSize="14sp" />
+
+                <EditText
+                    android:id="@+id/editText30"
+                    android:layout_width="0dp"
+                    android:layout_height="48dp"
+                    android:layout_weight=".275"
+                    android:ems="10"
+                    android:inputType="text"
                     android:textSize="14sp" />
 
                 <EditText
@@ -1673,15 +1592,6 @@
                     android:inputType="text"
                     android:textSize="14sp" />
 
-                <EditText
-                    android:id="@+id/editText32"
-                    android:layout_width="0dp"
-                    android:layout_height="48dp"
-                    android:layout_weight=".275"
-                    android:ems="10"
-                    android:inputType="text"
-                    android:textSize="14sp" />
-
             </LinearLayout>
 
             <LinearLayout
@@ -1690,7 +1600,6 @@
                 android:layout_marginTop="5dp">
 
                 <TextView
-                    android:id="@+id/textView94"
                     android:layout_width="0dp"
                     android:layout_height="48dp"
                     android:layout_weight=".09"
@@ -1700,12 +1609,20 @@
                     android:textSize="14sp" />
 
                 <TextView
-                    android:id="@+id/textView95"
                     android:layout_width="0dp"
                     android:layout_height="48dp"
                     android:layout_weight=".36"
                     android:text="Output Power -Carrier"
                     android:textColor="@color/textViewColor"
+                    android:textSize="14sp" />
+
+                <EditText
+                    android:id="@+id/editText32"
+                    android:layout_width="0dp"
+                    android:layout_height="48dp"
+                    android:layout_weight=".275"
+                    android:ems="10"
+                    android:inputType="text"
                     android:textSize="14sp" />
 
                 <EditText
@@ -1717,15 +1634,6 @@
                     android:inputType="text"
                     android:textSize="14sp" />
 
-                <EditText
-                    android:id="@+id/editText34"
-                    android:layout_width="0dp"
-                    android:layout_height="48dp"
-                    android:layout_weight=".275"
-                    android:ems="10"
-                    android:inputType="text"
-                    android:textSize="14sp" />
-
             </LinearLayout>
 
             <LinearLayout
@@ -1734,7 +1642,6 @@
                 android:layout_marginTop="5dp">
 
                 <TextView
-                    android:id="@+id/textView96"
                     android:layout_width="0dp"
                     android:layout_height="48dp"
                     android:layout_weight=".09"
@@ -1744,7 +1651,6 @@
                     android:textSize="14sp" />
 
                 <TextView
-                    android:id="@+id/textView97"
                     android:layout_width="0dp"
                     android:layout_height="48dp"
                     android:layout_weight=".36"
@@ -1753,7 +1659,7 @@
                     android:textSize="14sp" />
 
                 <EditText
-                    android:id="@+id/editText35"
+                    android:id="@+id/editText34"
                     android:layout_width="0dp"
                     android:layout_height="48dp"
                     android:layout_weight=".275"
@@ -1762,7 +1668,7 @@
                     android:textSize="14sp" />
 
                 <EditText
-                    android:id="@+id/editText36"
+                    android:id="@+id/editText35"
                     android:layout_width="0dp"
                     android:layout_height="48dp"
                     android:layout_weight=".275"
@@ -1778,7 +1684,6 @@
                 android:layout_marginTop="8dp">
 
                 <TextView
-                    android:id="@+id/textView98"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight=".09"
@@ -1788,7 +1693,6 @@
                     android:textSize="16sp" />
 
                 <TextView
-                    android:id="@+id/textView99"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight=".36"
@@ -1798,7 +1702,6 @@
                     android:textSize="16sp" />
 
                 <TextView
-                    android:id="@+id/textView100"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight=".275"
@@ -1809,7 +1712,6 @@
                     android:textSize="16sp" />
 
                 <TextView
-                    android:id="@+id/textView101"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight=".275"
@@ -1826,7 +1728,6 @@
                 android:layout_marginTop="5dp">
 
                 <TextView
-                    android:id="@+id/textView102"
                     android:layout_width="0dp"
                     android:layout_height="48dp"
                     android:layout_weight=".09"
@@ -1836,12 +1737,20 @@
                     android:textSize="14sp" />
 
                 <TextView
-                    android:id="@+id/textView103"
                     android:layout_width="0dp"
                     android:layout_height="48dp"
                     android:layout_weight=".36"
                     android:text="Operating Frequency"
                     android:textColor="@color/textViewColor"
+                    android:textSize="14sp" />
+
+                <EditText
+                    android:id="@+id/editText36"
+                    android:layout_width="0dp"
+                    android:layout_height="48dp"
+                    android:layout_weight=".275"
+                    android:ems="10"
+                    android:inputType="number"
                     android:textSize="14sp" />
 
                 <EditText
@@ -1852,15 +1761,6 @@
                     android:ems="10"
                     android:inputType="number"
                     android:textSize="14sp" />
-
-                <EditText
-                    android:id="@+id/editText38"
-                    android:layout_width="0dp"
-                    android:layout_height="48dp"
-                    android:layout_weight=".275"
-                    android:ems="10"
-                    android:inputType="number"
-                    android:textSize="14sp" />
             </LinearLayout>
 
             <LinearLayout
@@ -1869,7 +1769,6 @@
                 android:layout_marginTop="5dp">
 
                 <TextView
-                    android:id="@+id/textView104"
                     android:layout_width="0dp"
                     android:layout_height="48dp"
                     android:layout_weight=".09"
@@ -1879,13 +1778,22 @@
                     android:textSize="14sp" />
 
                 <TextView
-                    android:id="@+id/textView105"
                     android:layout_width="0dp"
                     android:layout_height="48dp"
                     android:layout_weight=".36"
                     android:text="Carrier PLL status "
                     android:textColor="@color/textViewColor"
                     android:textSize="14sp" />
+
+                <EditText
+                    android:id="@+id/editText38"
+                    android:layout_width="0dp"
+                    android:layout_height="48dp"
+                    android:layout_weight=".275"
+                    android:ems="10"
+                    android:inputType="text"
+                    android:textSize="14sp"
+                    android:hint="Normal"/>
 
                 <EditText
                     android:id="@+id/editText39"
@@ -1896,6 +1804,29 @@
                     android:inputType="text"
                     android:textSize="14sp"
                     android:hint="Normal"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="48dp"
+                    android:layout_weight=".09"
+                    android:text="6.3"
+                    android:textAlignment="center"
+                    android:textColor="@color/textViewColor"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="48dp"
+                    android:layout_weight=".36"
+                    android:text="USB PLL status"
+                    android:textColor="@color/textViewColor"
+                    android:textSize="14sp" />
 
                 <EditText
                     android:id="@+id/editText40"
@@ -1906,44 +1837,9 @@
                     android:inputType="text"
                     android:textSize="14sp"
                     android:hint="Normal"/>
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="5dp">
-
-                <TextView
-                    android:id="@+id/textView106"
-                    android:layout_width="0dp"
-                    android:layout_height="48dp"
-                    android:layout_weight=".09"
-                    android:text="6.3"
-                    android:textAlignment="center"
-                    android:textColor="@color/textViewColor"
-                    android:textSize="14sp" />
-
-                <TextView
-                    android:id="@+id/textView107"
-                    android:layout_width="0dp"
-                    android:layout_height="48dp"
-                    android:layout_weight=".36"
-                    android:text="USB PLL status"
-                    android:textColor="@color/textViewColor"
-                    android:textSize="14sp" />
 
                 <EditText
                     android:id="@+id/editText41"
-                    android:layout_width="0dp"
-                    android:layout_height="48dp"
-                    android:layout_weight=".275"
-                    android:ems="10"
-                    android:inputType="text"
-                    android:textSize="14sp"
-                    android:hint="Normal"/>
-
-                <EditText
-                    android:id="@+id/editText42"
                     android:layout_width="0dp"
                     android:layout_height="48dp"
                     android:layout_weight=".275"
@@ -1961,7 +1857,6 @@
                 android:layout_marginTop="5dp">
 
                 <TextView
-                    android:id="@+id/textView108"
                     android:layout_width="0dp"
                     android:layout_height="48dp"
                     android:layout_weight=".09"
@@ -1971,13 +1866,22 @@
                     android:textSize="14sp" />
 
                 <TextView
-                    android:id="@+id/textView109"
                     android:layout_width="0dp"
                     android:layout_height="48dp"
                     android:layout_weight=".36"
                     android:text="LSB PLL status "
                     android:textColor="@color/textViewColor"
                     android:textSize="14sp" />
+
+                <EditText
+                    android:id="@+id/editText42"
+                    android:layout_width="0dp"
+                    android:layout_height="48dp"
+                    android:layout_weight=".275"
+                    android:ems="10"
+                    android:inputType="text"
+                    android:textSize="14sp"
+                    android:hint="Normal"/>
 
                 <EditText
                     android:id="@+id/editText43"
@@ -1988,16 +1892,6 @@
                     android:inputType="text"
                     android:textSize="14sp"
                     android:hint="Normal"/>
-
-                <EditText
-                    android:id="@+id/editText44"
-                    android:layout_width="0dp"
-                    android:layout_height="48dp"
-                    android:layout_weight=".275"
-                    android:ems="10"
-                    android:inputType="text"
-                    android:textSize="14sp"
-                    android:hint="Normal"/>
             </LinearLayout>
 
             <LinearLayout
@@ -2006,7 +1900,6 @@
                 android:layout_marginTop="5dp">
 
                 <TextView
-                    android:id="@+id/textView110"
                     android:layout_width="0dp"
                     android:layout_height="48dp"
                     android:layout_weight=".09"
@@ -2016,12 +1909,20 @@
                     android:textSize="14sp" />
 
                 <TextView
-                    android:id="@+id/textView111"
                     android:layout_width="0dp"
                     android:layout_height="48dp"
                     android:layout_weight=".36"
                     android:text="30 Hz AM modulation depth"
                     android:textColor="@color/textViewColor"
+                    android:textSize="14sp" />
+
+                <EditText
+                    android:id="@+id/editText44"
+                    android:layout_width="0dp"
+                    android:layout_height="48dp"
+                    android:layout_weight=".275"
+                    android:ems="10"
+                    android:inputType="number"
                     android:textSize="14sp" />
 
                 <EditText
@@ -2032,15 +1933,6 @@
                     android:ems="10"
                     android:inputType="number"
                     android:textSize="14sp" />
-
-                <EditText
-                    android:id="@+id/editText46"
-                    android:layout_width="0dp"
-                    android:layout_height="48dp"
-                    android:layout_weight=".275"
-                    android:ems="10"
-                    android:inputType="number"
-                    android:textSize="14sp" />
             </LinearLayout>
 
             <LinearLayout
@@ -2049,7 +1941,6 @@
                 android:layout_marginTop="5dp">
 
                 <TextView
-                    android:id="@+id/textView112"
                     android:layout_width="0dp"
                     android:layout_height="48dp"
                     android:layout_weight=".09"
@@ -2059,12 +1950,20 @@
                     android:textSize="14sp" />
 
                 <TextView
-                    android:id="@+id/textView113"
                     android:layout_width="0dp"
                     android:layout_height="48dp"
                     android:layout_weight=".36"
                     android:text="1020 Hz modulation depth"
                     android:textColor="@color/textViewColor"
+                    android:textSize="14sp" />
+
+                <EditText
+                    android:id="@+id/editText46"
+                    android:layout_width="0dp"
+                    android:layout_height="48dp"
+                    android:layout_weight=".275"
+                    android:ems="10"
+                    android:inputType="number"
                     android:textSize="14sp" />
 
                 <EditText
@@ -2075,15 +1974,6 @@
                     android:ems="10"
                     android:inputType="number"
                     android:textSize="14sp" />
-
-                <EditText
-                    android:id="@+id/editText48"
-                    android:layout_width="0dp"
-                    android:layout_height="48dp"
-                    android:layout_weight=".275"
-                    android:ems="10"
-                    android:inputType="number"
-                    android:textSize="14sp" />
             </LinearLayout>
 
             <LinearLayout
@@ -2092,7 +1982,6 @@
                 android:layout_marginTop="5dp">
 
                 <TextView
-                    android:id="@+id/textView114"
                     android:layout_width="0dp"
                     android:layout_height="48dp"
                     android:layout_weight=".09"
@@ -2102,12 +1991,20 @@
                     android:textSize="14sp" />
 
                 <TextView
-                    android:id="@+id/textView115"
                     android:layout_width="0dp"
                     android:layout_height="48dp"
                     android:layout_weight=".36"
                     android:text="Side band RF Phase Offset"
                     android:textColor="@color/textViewColor"
+                    android:textSize="14sp" />
+
+                <EditText
+                    android:id="@+id/editText48"
+                    android:layout_width="0dp"
+                    android:layout_height="48dp"
+                    android:layout_weight=".275"
+                    android:ems="10"
+                    android:inputType="number"
                     android:textSize="14sp" />
 
                 <EditText
@@ -2118,15 +2015,6 @@
                     android:ems="10"
                     android:inputType="number"
                     android:textSize="14sp" />
-
-                <EditText
-                    android:id="@+id/editText50"
-                    android:layout_width="0dp"
-                    android:layout_height="48dp"
-                    android:layout_weight=".275"
-                    android:ems="10"
-                    android:inputType="number"
-                    android:textSize="14sp" />
             </LinearLayout>
 
             <LinearLayout
@@ -2135,7 +2023,6 @@
                 android:layout_marginTop="5dp">
 
                 <TextView
-                    android:id="@+id/textView116"
                     android:layout_width="0dp"
                     android:layout_height="48dp"
                     android:layout_weight=".09"
@@ -2145,12 +2032,20 @@
                     android:textSize="14sp" />
 
                 <TextView
-                    android:id="@+id/textView117"
                     android:layout_width="0dp"
                     android:layout_height="48dp"
                     android:layout_weight=".36"
                     android:text="Azimuth Offset"
                     android:textColor="@color/textViewColor"
+                    android:textSize="14sp" />
+
+                <EditText
+                    android:id="@+id/editText50"
+                    android:layout_width="0dp"
+                    android:layout_height="48dp"
+                    android:layout_weight=".275"
+                    android:ems="10"
+                    android:inputType="number"
                     android:textSize="14sp" />
 
                 <EditText
@@ -2161,15 +2056,6 @@
                     android:ems="10"
                     android:inputType="number"
                     android:textSize="14sp" />
-
-                <EditText
-                    android:id="@+id/editText52"
-                    android:layout_width="0dp"
-                    android:layout_height="48dp"
-                    android:layout_weight=".275"
-                    android:ems="10"
-                    android:inputType="number"
-                    android:textSize="14sp" />
             </LinearLayout>
 
             <LinearLayout
@@ -2178,7 +2064,6 @@
                 android:layout_marginTop="5dp">
 
                 <TextView
-                    android:id="@+id/textView118"
                     android:layout_width="0dp"
                     android:layout_height="48dp"
                     android:layout_weight=".09"
@@ -2188,7 +2073,6 @@
                     android:textSize="14sp" />
 
                 <TextView
-                    android:id="@+id/textView119"
                     android:layout_width="0dp"
                     android:layout_height="48dp"
                     android:layout_weight=".36"
@@ -2212,7 +2096,6 @@
                 </Switch>
 
                 <TextView
-                    android:id="@+id/textView120"
                     android:layout_width="0dp"
                     android:layout_height="48dp"
                     android:layout_weight=".1"
@@ -2236,7 +2119,6 @@
                 </Switch>
 
                 <TextView
-                    android:id="@+id/textView121"
                     android:layout_width="0dp"
                     android:layout_height="48dp"
                     android:layout_weight=".1"
@@ -2252,7 +2134,6 @@
                 android:layout_marginTop="5dp">
 
                 <TextView
-                    android:id="@+id/textView122"
                     android:layout_width="0dp"
                     android:layout_height="48dp"
                     android:layout_weight=".09"
@@ -2262,7 +2143,6 @@
                     android:textSize="14sp" />
 
                 <TextView
-                    android:id="@+id/textView123"
                     android:layout_width="0dp"
                     android:layout_height="48dp"
                     android:layout_weight=".36"
@@ -2286,7 +2166,6 @@
                 </Switch>
 
                 <TextView
-                    android:id="@+id/textView124"
                     android:layout_width="0dp"
                     android:layout_height="48dp"
                     android:layout_weight=".1"
@@ -2310,7 +2189,6 @@
                 </Switch>
 
                 <TextView
-                    android:id="@+id/textView125"
                     android:layout_width="0dp"
                     android:layout_height="48dp"
                     android:layout_weight=".1"
@@ -2325,7 +2203,6 @@
                 android:layout_marginTop="5dp">
 
                 <TextView
-                    android:id="@+id/textView126"
                     android:layout_width="0dp"
                     android:layout_height="48dp"
                     android:layout_weight=".09"
@@ -2335,12 +2212,20 @@
                     android:textSize="14sp" />
 
                 <TextView
-                    android:id="@+id/textView127"
                     android:layout_width="0dp"
                     android:layout_height="48dp"
                     android:layout_weight=".36"
                     android:text="Carrier o/p power"
                     android:textColor="@color/textViewColor"
+                    android:textSize="14sp" />
+
+                <EditText
+                    android:id="@+id/editText52"
+                    android:layout_width="0dp"
+                    android:layout_height="48dp"
+                    android:layout_weight=".275"
+                    android:ems="10"
+                    android:inputType="number"
                     android:textSize="14sp" />
 
                 <EditText
@@ -2351,15 +2236,6 @@
                     android:ems="10"
                     android:inputType="number"
                     android:textSize="14sp" />
-
-                <EditText
-                    android:id="@+id/editText54"
-                    android:layout_width="0dp"
-                    android:layout_height="48dp"
-                    android:layout_weight=".275"
-                    android:ems="10"
-                    android:inputType="number"
-                    android:textSize="14sp" />
             </LinearLayout>
 
             <LinearLayout
@@ -2368,7 +2244,6 @@
                 android:layout_marginTop="5dp">
 
                 <TextView
-                    android:id="@+id/textView128"
                     android:layout_width="0dp"
                     android:layout_height="48dp"
                     android:layout_weight=".09"
@@ -2378,12 +2253,20 @@
                     android:textSize="14sp" />
 
                 <TextView
-                    android:id="@+id/textView129"
                     android:layout_width="0dp"
                     android:layout_height="48dp"
                     android:layout_weight=".36"
                     android:text="LSB COS o/p power"
                     android:textColor="@color/textViewColor"
+                    android:textSize="14sp" />
+
+                <EditText
+                    android:id="@+id/editText54"
+                    android:layout_width="0dp"
+                    android:layout_height="48dp"
+                    android:layout_weight=".275"
+                    android:ems="10"
+                    android:inputType="number"
                     android:textSize="14sp" />
 
                 <EditText
@@ -2394,15 +2277,6 @@
                     android:ems="10"
                     android:inputType="number"
                     android:textSize="14sp" />
-
-                <EditText
-                    android:id="@+id/editText56"
-                    android:layout_width="0dp"
-                    android:layout_height="48dp"
-                    android:layout_weight=".275"
-                    android:ems="10"
-                    android:inputType="number"
-                    android:textSize="14sp" />
             </LinearLayout>
 
             <LinearLayout
@@ -2411,7 +2285,6 @@
                 android:layout_marginTop="5dp">
 
                 <TextView
-                    android:id="@+id/textView130"
                     android:layout_width="0dp"
                     android:layout_height="48dp"
                     android:layout_weight=".09"
@@ -2421,12 +2294,20 @@
                     android:textSize="14sp" />
 
                 <TextView
-                    android:id="@+id/textView131"
                     android:layout_width="0dp"
                     android:layout_height="48dp"
                     android:layout_weight=".36"
                     android:text="LSB SIN o/p power"
                     android:textColor="@color/textViewColor"
+                    android:textSize="14sp" />
+
+                <EditText
+                    android:id="@+id/editText56"
+                    android:layout_width="0dp"
+                    android:layout_height="48dp"
+                    android:layout_weight=".275"
+                    android:ems="10"
+                    android:inputType="number"
                     android:textSize="14sp" />
 
                 <EditText
@@ -2437,15 +2318,6 @@
                     android:ems="10"
                     android:inputType="number"
                     android:textSize="14sp" />
-
-                <EditText
-                    android:id="@+id/editText58"
-                    android:layout_width="0dp"
-                    android:layout_height="48dp"
-                    android:layout_weight=".275"
-                    android:ems="10"
-                    android:inputType="number"
-                    android:textSize="14sp" />
             </LinearLayout>
 
             <LinearLayout
@@ -2454,7 +2326,6 @@
                 android:layout_marginTop="5dp">
 
                 <TextView
-                    android:id="@+id/textView132"
                     android:layout_width="0dp"
                     android:layout_height="48dp"
                     android:layout_weight=".09"
@@ -2464,12 +2335,20 @@
                     android:textSize="14sp" />
 
                 <TextView
-                    android:id="@+id/textView133"
                     android:layout_width="0dp"
                     android:layout_height="48dp"
                     android:layout_weight=".36"
                     android:text="USB COS o/p power"
                     android:textColor="@color/textViewColor"
+                    android:textSize="14sp" />
+
+                <EditText
+                    android:id="@+id/editText58"
+                    android:layout_width="0dp"
+                    android:layout_height="48dp"
+                    android:layout_weight=".275"
+                    android:ems="10"
+                    android:inputType="number"
                     android:textSize="14sp" />
 
                 <EditText
@@ -2480,15 +2359,6 @@
                     android:ems="10"
                     android:inputType="number"
                     android:textSize="14sp" />
-
-                <EditText
-                    android:id="@+id/editText60"
-                    android:layout_width="0dp"
-                    android:layout_height="48dp"
-                    android:layout_weight=".275"
-                    android:ems="10"
-                    android:inputType="number"
-                    android:textSize="14sp" />
             </LinearLayout>
 
             <LinearLayout
@@ -2497,7 +2367,6 @@
                 android:layout_marginTop="5dp">
 
                 <TextView
-                    android:id="@+id/textView134"
                     android:layout_width="0dp"
                     android:layout_height="48dp"
                     android:layout_weight=".09"
@@ -2507,12 +2376,20 @@
                     android:textSize="14sp" />
 
                 <TextView
-                    android:id="@+id/textView135"
                     android:layout_width="0dp"
                     android:layout_height="48dp"
                     android:layout_weight=".36"
                     android:text="USB SIN o/p power"
                     android:textColor="@color/textViewColor"
+                    android:textSize="14sp" />
+
+                <EditText
+                    android:id="@+id/editText60"
+                    android:layout_width="0dp"
+                    android:layout_height="48dp"
+                    android:layout_weight=".275"
+                    android:ems="10"
+                    android:inputType="number"
                     android:textSize="14sp" />
 
                 <EditText
@@ -2523,15 +2400,6 @@
                     android:ems="10"
                     android:inputType="number"
                     android:textSize="14sp" />
-
-                <EditText
-                    android:id="@+id/editText62"
-                    android:layout_width="0dp"
-                    android:layout_height="48dp"
-                    android:layout_weight=".275"
-                    android:ems="10"
-                    android:inputType="number"
-                    android:textSize="14sp" />
             </LinearLayout>
 
             <LinearLayout
@@ -2540,7 +2408,6 @@
                 android:layout_marginTop="5dp">
 
                 <TextView
-                    android:id="@+id/textView136"
                     android:layout_width="0dp"
                     android:layout_height="48dp"
                     android:layout_weight=".09"
@@ -2550,13 +2417,22 @@
                     android:textSize="14sp" />
 
                 <TextView
-                    android:id="@+id/textView137"
                     android:layout_width="0dp"
                     android:layout_height="48dp"
                     android:layout_weight=".36"
                     android:text="ANTENNA CONTROL "
                     android:textColor="@color/textViewColor"
                     android:textSize="14sp" />
+
+                <EditText
+                    android:id="@+id/editText62"
+                    android:layout_width="0dp"
+                    android:layout_height="48dp"
+                    android:layout_weight=".275"
+                    android:ems="10"
+                    android:inputType="text"
+                    android:textSize="14sp"
+                    android:hint="Normal"/>
 
                 <EditText
                     android:id="@+id/editText63"
@@ -2567,16 +2443,6 @@
                     android:inputType="text"
                     android:textSize="14sp"
                     android:hint="Normal"/>
-
-                <EditText
-                    android:id="@+id/editText64"
-                    android:layout_width="0dp"
-                    android:layout_height="48dp"
-                    android:layout_weight=".275"
-                    android:ems="10"
-                    android:inputType="text"
-                    android:textSize="14sp"
-                    android:hint="Normal"/>
             </LinearLayout>
 
             <LinearLayout
@@ -2585,7 +2451,6 @@
                 android:layout_marginTop="5dp">
 
                 <TextView
-                    android:id="@+id/textView138"
                     android:layout_width="0dp"
                     android:layout_height="48dp"
                     android:layout_weight=".09"
@@ -2595,7 +2460,6 @@
                     android:textSize="14sp" />
 
                 <TextView
-                    android:id="@+id/textView139"
                     android:layout_width="0dp"
                     android:layout_height="48dp"
                     android:layout_weight=".36"
@@ -2619,7 +2483,6 @@
                 </Switch>
 
                 <TextView
-                    android:id="@+id/textView140"
                     android:layout_width="0dp"
                     android:layout_height="48dp"
                     android:layout_weight=".1"
@@ -2643,7 +2506,6 @@
                 </Switch>
 
                 <TextView
-                    android:id="@+id/textView141"
                     android:layout_width="0dp"
                     android:layout_height="48dp"
                     android:layout_weight=".1"
@@ -2658,7 +2520,6 @@
                 android:layout_marginTop="5dp">
 
                 <TextView
-                    android:id="@+id/textView142"
                     android:layout_width="0dp"
                     android:layout_height="48dp"
                     android:layout_weight=".09"
@@ -2668,7 +2529,6 @@
                     android:textSize="14sp" />
 
                 <TextView
-                    android:id="@+id/textView143"
                     android:layout_width="0dp"
                     android:layout_height="48dp"
                     android:layout_weight=".36"
@@ -2692,7 +2552,6 @@
                 </Switch>
 
                 <TextView
-                    android:id="@+id/textView144"
                     android:layout_width="0dp"
                     android:layout_height="48dp"
                     android:layout_weight=".1"
@@ -2716,7 +2575,6 @@
                 </Switch>
 
                 <TextView
-                    android:id="@+id/textView145"
                     android:layout_width="0dp"
                     android:layout_height="48dp"
                     android:layout_weight=".1"
@@ -2731,7 +2589,6 @@
                 android:layout_marginTop="5dp">
 
                 <TextView
-                    android:id="@+id/textView146"
                     android:layout_width="0dp"
                     android:layout_height="48dp"
                     android:layout_weight=".09"
@@ -2741,7 +2598,6 @@
                     android:textSize="14sp" />
 
                 <TextView
-                    android:id="@+id/textView147"
                     android:layout_width="0dp"
                     android:layout_height="48dp"
                     android:layout_weight=".36"
@@ -2765,7 +2621,6 @@
                 </Switch>
 
                 <TextView
-                    android:id="@+id/textView148"
                     android:layout_width="0dp"
                     android:layout_height="48dp"
                     android:layout_weight=".1"
@@ -2789,7 +2644,6 @@
                 </Switch>
 
                 <TextView
-                    android:id="@+id/textView149"
                     android:layout_width="0dp"
                     android:layout_height="48dp"
                     android:layout_weight=".1"
@@ -2804,7 +2658,6 @@
                 android:layout_marginTop="5dp">
 
                 <TextView
-                    android:id="@+id/textView150"
                     android:layout_width="0dp"
                     android:layout_height="48dp"
                     android:layout_weight=".09"
@@ -2814,7 +2667,6 @@
                     android:textSize="14sp" />
 
                 <TextView
-                    android:id="@+id/textView151"
                     android:layout_width="0dp"
                     android:layout_height="48dp"
                     android:layout_weight=".36"
@@ -2823,7 +2675,7 @@
                     android:textSize="14sp" />
 
                 <EditText
-                    android:id="@+id/editText65"
+                    android:id="@+id/editText64"
                     android:layout_width="0dp"
                     android:layout_height="48dp"
                     android:layout_weight=".275"
@@ -2832,7 +2684,7 @@
                     android:textSize="14sp" />
 
                 <EditText
-                    android:id="@+id/editText66"
+                    android:id="@+id/editText65"
                     android:layout_width="0dp"
                     android:layout_height="48dp"
                     android:layout_weight=".275"
@@ -2847,7 +2699,6 @@
                 android:layout_marginTop="5dp">
 
                 <TextView
-                    android:id="@+id/textView152"
                     android:layout_width="0dp"
                     android:layout_height="48dp"
                     android:layout_weight=".09"
@@ -2857,7 +2708,6 @@
                     android:textSize="14sp" />
 
                 <TextView
-                    android:id="@+id/textView153"
                     android:layout_width="0dp"
                     android:layout_height="48dp"
                     android:layout_weight=".36"
@@ -2866,7 +2716,7 @@
                     android:textSize="14sp" />
 
                 <EditText
-                    android:id="@+id/editText67"
+                    android:id="@+id/editText66"
                     android:layout_width="0dp"
                     android:layout_height="48dp"
                     android:layout_weight=".275"
@@ -2875,7 +2725,7 @@
                     android:textSize="14sp" />
 
                 <EditText
-                    android:id="@+id/editText68"
+                    android:id="@+id/editText67"
                     android:layout_width="0dp"
                     android:layout_height="48dp"
                     android:layout_weight=".275"
@@ -2890,7 +2740,6 @@
                 android:layout_marginTop="8dp">
 
                 <TextView
-                    android:id="@+id/textView154"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight=".09"
@@ -2900,7 +2749,6 @@
                     android:textSize="16sp" />
 
                 <TextView
-                    android:id="@+id/textView155"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight=".91"
@@ -2916,7 +2764,6 @@
                 android:layout_marginTop="5dp">
 
                 <TextView
-                    android:id="@+id/textView156"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight=".09"
@@ -2927,7 +2774,6 @@
                     android:textSize="16sp" />
 
                 <TextView
-                    android:id="@+id/textView157"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight=".36"
@@ -2938,7 +2784,6 @@
                     android:textSize="16sp" />
 
                 <TextView
-                    android:id="@+id/textView158"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight=".55"
@@ -2955,7 +2800,6 @@
                 android:layout_marginTop="5dp">
 
                 <TextView
-                    android:id="@+id/textView159"
                     android:layout_width="0dp"
                     android:layout_height="48dp"
                     android:layout_weight=".09"
@@ -2965,11 +2809,44 @@
                     android:textSize="14sp" />
 
                 <TextView
-                    android:id="@+id/textView160"
                     android:layout_width="0dp"
                     android:layout_height="48dp"
                     android:layout_weight=".36"
                     android:text="MON 1 Bypass Mode "
+                    android:textColor="@color/textViewColor"
+                    android:textSize="14sp" />
+
+                <EditText
+                    android:id="@+id/editText68"
+                    android:layout_width="0dp"
+                    android:layout_height="48dp"
+                    android:layout_weight=".55"
+                    android:ems="10"
+                    android:inputType="text"
+                    android:hint="Normal"
+                    android:textSize="14sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="48dp"
+                    android:layout_weight=".09"
+                    android:text="7.2"
+                    android:textAlignment="center"
+                    android:textColor="@color/textViewColor"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="48dp"
+                    android:layout_weight=".36"
+                    android:text="MON 2 Bypass Mode "
                     android:textColor="@color/textViewColor"
                     android:textSize="14sp" />
 
@@ -2982,7 +2859,6 @@
                     android:inputType="text"
                     android:hint="Normal"
                     android:textSize="14sp" />
-
             </LinearLayout>
 
             <LinearLayout
@@ -2991,42 +2867,6 @@
                 android:layout_marginTop="5dp">
 
                 <TextView
-                    android:id="@+id/textView161"
-                    android:layout_width="0dp"
-                    android:layout_height="48dp"
-                    android:layout_weight=".09"
-                    android:text="7.2"
-                    android:textAlignment="center"
-                    android:textColor="@color/textViewColor"
-                    android:textSize="14sp" />
-
-                <TextView
-                    android:id="@+id/textView162"
-                    android:layout_width="0dp"
-                    android:layout_height="48dp"
-                    android:layout_weight=".36"
-                    android:text="MON 2 Bypass Mode "
-                    android:textColor="@color/textViewColor"
-                    android:textSize="14sp" />
-
-                <EditText
-                    android:id="@+id/editText70"
-                    android:layout_width="0dp"
-                    android:layout_height="48dp"
-                    android:layout_weight=".55"
-                    android:ems="10"
-                    android:inputType="text"
-                    android:hint="Normal"
-                    android:textSize="14sp" />
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="5dp">
-
-                <TextView
-                    android:id="@+id/textView163"
                     android:layout_width="0dp"
                     android:layout_height="48dp"
                     android:layout_weight=".09"
@@ -3036,7 +2876,6 @@
                     android:textSize="14sp" />
 
                 <TextView
-                    android:id="@+id/textView164"
                     android:layout_width="0dp"
                     android:layout_height="48dp"
                     android:layout_weight=".36"
@@ -3060,7 +2899,6 @@
                 </Switch>
 
                 <TextView
-                    android:id="@+id/textView165"
                     android:layout_width="0dp"
                     android:layout_height="48dp"
                     android:layout_weight=".2"
@@ -3075,7 +2913,6 @@
                 android:layout_marginTop="5dp">
 
                 <TextView
-                    android:id="@+id/textView166"
                     android:layout_width="0dp"
                     android:layout_height="48dp"
                     android:layout_weight=".09"
@@ -3085,7 +2922,6 @@
                     android:textSize="14sp" />
 
                 <TextView
-                    android:id="@+id/textView167"
                     android:layout_width="0dp"
                     android:layout_height="48dp"
                     android:layout_weight=".36"
@@ -3109,7 +2945,6 @@
                 </Switch>
 
                 <TextView
-                    android:id="@+id/textView168"
                     android:layout_width="0dp"
                     android:layout_height="48dp"
                     android:layout_weight=".2"
@@ -3124,7 +2959,6 @@
                 android:layout_marginTop="8dp">
 
                 <TextView
-                    android:id="@+id/textView169"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight=".09"
@@ -3134,7 +2968,6 @@
                     android:textSize="16sp" />
 
                 <TextView
-                    android:id="@+id/textView170"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight=".91"
@@ -3150,7 +2983,6 @@
                 android:layout_marginTop="8dp">
 
                 <TextView
-                    android:id="@+id/textView171"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight=".09"
@@ -3161,7 +2993,6 @@
                     android:textSize="16sp" />
 
                 <TextView
-                    android:id="@+id/textView172"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight=".36"
@@ -3171,7 +3002,6 @@
                     android:textSize="16sp" />
 
                 <TextView
-                    android:id="@+id/textView173"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight=".275"
@@ -3182,7 +3012,6 @@
                     android:textSize="16sp" />
 
                 <TextView
-                    android:id="@+id/textView174"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight=".275"
@@ -3199,7 +3028,6 @@
                 android:layout_marginTop="5dp">
 
                 <TextView
-                    android:id="@+id/textView175"
                     android:layout_width="0dp"
                     android:layout_height="48dp"
                     android:layout_weight=".09"
@@ -3209,12 +3037,21 @@
                     android:textSize="14sp" />
 
                 <TextView
-                    android:id="@+id/textView176"
                     android:layout_width="0dp"
                     android:layout_height="48dp"
                     android:layout_weight=".36"
                     android:text="30 Hz AM modulation depth"
                     android:textColor="@color/textViewColor"
+                    android:textSize="14sp" />
+
+                <EditText
+                    android:id="@+id/editText70"
+                    android:layout_width="0dp"
+                    android:layout_height="48dp"
+                    android:layout_weight=".275"
+                    android:ems="10"
+                    android:inputType="number"
+                    android:hint="30 \u0025"
                     android:textSize="14sp" />
 
                 <EditText
@@ -3226,16 +3063,6 @@
                     android:inputType="number"
                     android:hint="30 \u0025"
                     android:textSize="14sp" />
-
-                <EditText
-                    android:id="@+id/editText72"
-                    android:layout_width="0dp"
-                    android:layout_height="48dp"
-                    android:layout_weight=".275"
-                    android:ems="10"
-                    android:inputType="number"
-                    android:hint="30 \u0025"
-                    android:textSize="14sp" />
             </LinearLayout>
 
             <LinearLayout
@@ -3244,7 +3071,6 @@
                 android:layout_marginTop="5dp">
 
                 <TextView
-                    android:id="@+id/textView177"
                     android:layout_width="0dp"
                     android:layout_height="48dp"
                     android:layout_weight=".09"
@@ -3254,12 +3080,21 @@
                     android:textSize="14sp" />
 
                 <TextView
-                    android:id="@+id/textView178"
                     android:layout_width="0dp"
                     android:layout_height="48dp"
                     android:layout_weight=".36"
                     android:text="9960 Hz AM modulation depth"
                     android:textColor="@color/textViewColor"
+                    android:textSize="14sp" />
+
+                <EditText
+                    android:id="@+id/editText72"
+                    android:layout_width="0dp"
+                    android:layout_height="48dp"
+                    android:layout_weight=".275"
+                    android:ems="10"
+                    android:inputType="number"
+                    android:hint="30 \u0025"
                     android:textSize="14sp" />
 
                 <EditText
@@ -3271,16 +3106,6 @@
                     android:inputType="number"
                     android:hint="30 \u0025"
                     android:textSize="14sp" />
-
-                <EditText
-                    android:id="@+id/editText74"
-                    android:layout_width="0dp"
-                    android:layout_height="48dp"
-                    android:layout_weight=".275"
-                    android:ems="10"
-                    android:inputType="number"
-                    android:hint="30 \u0025"
-                    android:textSize="14sp" />
             </LinearLayout>
 
             <LinearLayout
@@ -3289,7 +3114,6 @@
                 android:layout_marginTop="5dp">
 
                 <TextView
-                    android:id="@+id/textView179"
                     android:layout_width="0dp"
                     android:layout_height="48dp"
                     android:layout_weight=".09"
@@ -3299,12 +3123,21 @@
                     android:textSize="14sp" />
 
                 <TextView
-                    android:id="@+id/textView180"
                     android:layout_width="0dp"
                     android:layout_height="48dp"
                     android:layout_weight=".36"
                     android:text="9960 Hz FM Index"
                     android:textColor="@color/textViewColor"
+                    android:textSize="14sp" />
+
+                <EditText
+                    android:id="@+id/editText74"
+                    android:layout_width="0dp"
+                    android:layout_height="48dp"
+                    android:layout_weight=".275"
+                    android:ems="10"
+                    android:inputType="number"
+                    android:hint="16"
                     android:textSize="14sp" />
 
                 <EditText
@@ -3316,16 +3149,6 @@
                     android:inputType="number"
                     android:hint="16"
                     android:textSize="14sp" />
-
-                <EditText
-                    android:id="@+id/editText76"
-                    android:layout_width="0dp"
-                    android:layout_height="48dp"
-                    android:layout_weight=".275"
-                    android:ems="10"
-                    android:inputType="number"
-                    android:hint="16"
-                    android:textSize="14sp" />
             </LinearLayout>
 
             <LinearLayout
@@ -3334,7 +3157,6 @@
                 android:layout_marginTop="5dp">
 
                 <TextView
-                    android:id="@+id/textView181"
                     android:layout_width="0dp"
                     android:layout_height="48dp"
                     android:layout_weight=".09"
@@ -3344,7 +3166,6 @@
                     android:textSize="14sp" />
 
                 <TextView
-                    android:id="@+id/textView182"
                     android:layout_width="0dp"
                     android:layout_height="48dp"
                     android:layout_weight=".36"
@@ -3353,7 +3174,7 @@
                     android:textSize="14sp" />
 
                 <EditText
-                    android:id="@+id/editText77"
+                    android:id="@+id/editText76"
                     android:layout_width="0dp"
                     android:layout_height="48dp"
                     android:layout_weight=".275"
@@ -3362,7 +3183,7 @@
                     android:textSize="14sp" />
 
                 <EditText
-                    android:id="@+id/editText78"
+                    android:id="@+id/editText77"
                     android:layout_width="0dp"
                     android:layout_height="48dp"
                     android:layout_weight=".275"
@@ -3377,7 +3198,6 @@
                 android:layout_marginTop="8dp">
 
                 <TextView
-                    android:id="@+id/textView183"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight=".09"
@@ -3387,7 +3207,6 @@
                     android:textSize="16sp" />
 
                 <TextView
-                    android:id="@+id/textView184"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight=".91"
@@ -3403,7 +3222,6 @@
                 android:layout_marginTop="8dp">
 
                 <TextView
-                    android:id="@+id/textView185"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight=".09"
@@ -3414,7 +3232,6 @@
                     android:textSize="16sp" />
 
                 <TextView
-                    android:id="@+id/textView186"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight=".36"
@@ -3424,7 +3241,6 @@
                     android:textSize="16sp" />
 
                 <TextView
-                    android:id="@+id/textView187"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight=".275"
@@ -3435,7 +3251,6 @@
                     android:textSize="16sp" />
 
                 <TextView
-                    android:id="@+id/textView188"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight=".275"
@@ -3452,7 +3267,6 @@
                 android:layout_marginTop="5dp">
 
                 <TextView
-                    android:id="@+id/textView189"
                     android:layout_width="0dp"
                     android:layout_height="48dp"
                     android:layout_weight=".09"
@@ -3462,12 +3276,20 @@
                     android:textSize="14sp" />
 
                 <TextView
-                    android:id="@+id/textView190"
                     android:layout_width="0dp"
                     android:layout_height="48dp"
                     android:layout_weight=".36"
                     android:text="USB SIN"
                     android:textColor="@color/textViewColor"
+                    android:textSize="14sp" />
+
+                <EditText
+                    android:id="@+id/editText78"
+                    android:layout_width="0dp"
+                    android:layout_height="48dp"
+                    android:layout_weight=".275"
+                    android:ems="10"
+                    android:inputType="number"
                     android:textSize="14sp" />
 
                 <EditText
@@ -3478,15 +3300,6 @@
                     android:ems="10"
                     android:inputType="number"
                     android:textSize="14sp" />
-
-                <EditText
-                    android:id="@+id/editText80"
-                    android:layout_width="0dp"
-                    android:layout_height="48dp"
-                    android:layout_weight=".275"
-                    android:ems="10"
-                    android:inputType="number"
-                    android:textSize="14sp" />
             </LinearLayout>
 
             <LinearLayout
@@ -3495,7 +3308,6 @@
                 android:layout_marginTop="5dp">
 
                 <TextView
-                    android:id="@+id/textView191"
                     android:layout_width="0dp"
                     android:layout_height="48dp"
                     android:layout_weight=".09"
@@ -3505,12 +3317,20 @@
                     android:textSize="14sp" />
 
                 <TextView
-                    android:id="@+id/textView192"
                     android:layout_width="0dp"
                     android:layout_height="48dp"
                     android:layout_weight=".36"
                     android:text="USB COS"
                     android:textColor="@color/textViewColor"
+                    android:textSize="14sp" />
+
+                <EditText
+                    android:id="@+id/editText80"
+                    android:layout_width="0dp"
+                    android:layout_height="48dp"
+                    android:layout_weight=".275"
+                    android:ems="10"
+                    android:inputType="number"
                     android:textSize="14sp" />
 
                 <EditText
@@ -3521,15 +3341,6 @@
                     android:ems="10"
                     android:inputType="number"
                     android:textSize="14sp" />
-
-                <EditText
-                    android:id="@+id/editText82"
-                    android:layout_width="0dp"
-                    android:layout_height="48dp"
-                    android:layout_weight=".275"
-                    android:ems="10"
-                    android:inputType="number"
-                    android:textSize="14sp" />
             </LinearLayout>
 
             <LinearLayout
@@ -3538,7 +3349,6 @@
                 android:layout_marginTop="5dp">
 
                 <TextView
-                    android:id="@+id/textView193"
                     android:layout_width="0dp"
                     android:layout_height="48dp"
                     android:layout_weight=".09"
@@ -3548,12 +3358,20 @@
                     android:textSize="14sp" />
 
                 <TextView
-                    android:id="@+id/textView194"
                     android:layout_width="0dp"
                     android:layout_height="48dp"
                     android:layout_weight=".36"
                     android:text="LSB SIN"
                     android:textColor="@color/textViewColor"
+                    android:textSize="14sp" />
+
+                <EditText
+                    android:id="@+id/editText82"
+                    android:layout_width="0dp"
+                    android:layout_height="48dp"
+                    android:layout_weight=".275"
+                    android:ems="10"
+                    android:inputType="number"
                     android:textSize="14sp" />
 
                 <EditText
@@ -3564,15 +3382,6 @@
                     android:ems="10"
                     android:inputType="number"
                     android:textSize="14sp" />
-
-                <EditText
-                    android:id="@+id/editText84"
-                    android:layout_width="0dp"
-                    android:layout_height="48dp"
-                    android:layout_weight=".275"
-                    android:ems="10"
-                    android:inputType="number"
-                    android:textSize="14sp" />
             </LinearLayout>
 
             <LinearLayout
@@ -3581,7 +3390,6 @@
                 android:layout_marginTop="5dp">
 
                 <TextView
-                    android:id="@+id/textView195"
                     android:layout_width="0dp"
                     android:layout_height="48dp"
                     android:layout_weight=".09"
@@ -3591,7 +3399,6 @@
                     android:textSize="14sp" />
 
                 <TextView
-                    android:id="@+id/textView196"
                     android:layout_width="0dp"
                     android:layout_height="48dp"
                     android:layout_weight=".36"
@@ -3600,7 +3407,7 @@
                     android:textSize="14sp" />
 
                 <EditText
-                    android:id="@+id/editText85"
+                    android:id="@+id/editText84"
                     android:layout_width="0dp"
                     android:layout_height="48dp"
                     android:layout_weight=".275"
@@ -3609,7 +3416,7 @@
                     android:textSize="14sp" />
 
                 <EditText
-                    android:id="@+id/editText86"
+                    android:id="@+id/editText85"
                     android:layout_width="0dp"
                     android:layout_height="48dp"
                     android:layout_weight=".275"
@@ -3624,7 +3431,6 @@
                 android:layout_marginTop="8dp">
 
                 <TextView
-                    android:id="@+id/textView197"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight=".09"
@@ -3634,7 +3440,6 @@
                     android:textSize="16sp" />
 
                 <TextView
-                    android:id="@+id/textView198"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight=".91"
@@ -3650,7 +3455,6 @@
                 android:layout_marginTop="8dp">
 
                 <TextView
-                    android:id="@+id/textView199"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight=".09"
@@ -3660,7 +3464,6 @@
                     android:textSize="16sp" />
 
                 <TextView
-                    android:id="@+id/textView200"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight=".36"
@@ -3670,7 +3473,6 @@
                     android:textSize="16sp" />
 
                 <TextView
-                    android:id="@+id/textView201"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight=".275"
@@ -3681,7 +3483,6 @@
                     android:textSize="16sp" />
 
                 <TextView
-                    android:id="@+id/textView202"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight=".275"
@@ -3698,7 +3499,6 @@
                 android:layout_marginTop="5dp">
 
                 <TextView
-                    android:id="@+id/textView203"
                     android:layout_width="0dp"
                     android:layout_height="48dp"
                     android:layout_weight=".09"
@@ -3708,7 +3508,6 @@
                     android:textSize="14sp" />
 
                 <TextView
-                    android:id="@+id/textView204"
                     android:layout_width="0dp"
                     android:layout_height="48dp"
                     android:layout_weight=".36"
@@ -3717,7 +3516,7 @@
                     android:textSize="14sp" />
 
                 <EditText
-                    android:id="@+id/editText87"
+                    android:id="@+id/editText86"
                     android:layout_width="0dp"
                     android:layout_height="48dp"
                     android:layout_weight=".275"
@@ -3727,7 +3526,7 @@
                     android:textSize="14sp" />
 
                 <EditText
-                    android:id="@+id/editText88"
+                    android:id="@+id/editText87"
                     android:layout_width="0dp"
                     android:layout_height="48dp"
                     android:layout_weight=".275"
@@ -3743,7 +3542,6 @@
                 android:layout_marginTop="5dp">
 
                 <TextView
-                    android:id="@+id/textView205"
                     android:layout_width="0dp"
                     android:layout_height="48dp"
                     android:layout_weight=".09"
@@ -3753,7 +3551,6 @@
                     android:textSize="14sp" />
 
                 <TextView
-                    android:id="@+id/textView206"
                     android:layout_width="0dp"
                     android:layout_height="48dp"
                     android:layout_weight=".36"
@@ -3762,7 +3559,7 @@
                     android:textSize="14sp" />
 
                 <EditText
-                    android:id="@+id/editText89"
+                    android:id="@+id/editText88"
                     android:layout_width="0dp"
                     android:layout_height="48dp"
                     android:layout_weight=".275"
@@ -3771,7 +3568,7 @@
                     android:textSize="14sp" />
 
                 <EditText
-                    android:id="@+id/editText90"
+                    android:id="@+id/editText89"
                     android:layout_width="0dp"
                     android:layout_height="48dp"
                     android:layout_weight=".275"
@@ -3786,7 +3583,6 @@
                 android:layout_marginTop="8dp">
 
                 <TextView
-                    android:id="@+id/textView207"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight=".09"
@@ -3796,7 +3592,6 @@
                     android:textSize="16sp" />
 
                 <TextView
-                    android:id="@+id/textView208"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight=".36"
@@ -3806,7 +3601,6 @@
                     android:textSize="16sp" />
 
                 <TextView
-                    android:id="@+id/textView209"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight=".275"
@@ -3817,7 +3611,6 @@
                     android:textSize="16sp" />
 
                 <TextView
-                    android:id="@+id/textView210"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight=".275"
@@ -3834,7 +3627,6 @@
                 android:layout_marginTop="5dp">
 
                 <TextView
-                    android:id="@+id/textView211"
                     android:layout_width="0dp"
                     android:layout_height="48dp"
                     android:layout_weight=".09"
@@ -3844,12 +3636,21 @@
                     android:textSize="14sp" />
 
                 <TextView
-                    android:id="@+id/textView212"
                     android:layout_width="0dp"
                     android:layout_height="48dp"
                     android:layout_weight=".36"
                     android:text="DC -15V VOLTAGE"
                     android:textColor="@color/textViewColor"
+                    android:textSize="14sp" />
+
+                <EditText
+                    android:id="@+id/editText90"
+                    android:layout_width="0dp"
+                    android:layout_height="48dp"
+                    android:layout_weight=".275"
+                    android:ems="10"
+                    android:inputType="number"
+                    android:hint="(15.75-14.25) V (\u00b1 5\u0025)"
                     android:textSize="14sp" />
 
                 <EditText
@@ -3861,16 +3662,6 @@
                     android:inputType="number"
                     android:hint="(15.75-14.25) V (\u00b1 5\u0025)"
                     android:textSize="14sp" />
-
-                <EditText
-                    android:id="@+id/editText92"
-                    android:layout_width="0dp"
-                    android:layout_height="48dp"
-                    android:layout_weight=".275"
-                    android:ems="10"
-                    android:inputType="number"
-                    android:hint="(15.75-14.25) V (\u00b1 5\u0025)"
-                    android:textSize="14sp" />
             </LinearLayout>
 
             <LinearLayout
@@ -3879,7 +3670,6 @@
                 android:layout_marginTop="5dp">
 
                 <TextView
-                    android:id="@+id/textView213"
                     android:layout_width="0dp"
                     android:layout_height="48dp"
                     android:layout_weight=".09"
@@ -3889,12 +3679,20 @@
                     android:textSize="14sp" />
 
                 <TextView
-                    android:id="@+id/textView214"
                     android:layout_width="0dp"
                     android:layout_height="48dp"
                     android:layout_weight=".36"
                     android:text="DC -15A CURRENT"
                     android:textColor="@color/textViewColor"
+                    android:textSize="14sp" />
+
+                <EditText
+                    android:id="@+id/editText92"
+                    android:layout_width="0dp"
+                    android:layout_height="48dp"
+                    android:layout_weight=".275"
+                    android:ems="10"
+                    android:inputType="number"
                     android:textSize="14sp" />
 
                 <EditText
@@ -3905,15 +3703,6 @@
                     android:ems="10"
                     android:inputType="number"
                     android:textSize="14sp" />
-
-                <EditText
-                    android:id="@+id/editText94"
-                    android:layout_width="0dp"
-                    android:layout_height="48dp"
-                    android:layout_weight=".275"
-                    android:ems="10"
-                    android:inputType="number"
-                    android:textSize="14sp" />
             </LinearLayout>
 
             <LinearLayout
@@ -3922,7 +3711,6 @@
                 android:layout_marginTop="5dp">
 
                 <TextView
-                    android:id="@+id/textView215"
                     android:layout_width="0dp"
                     android:layout_height="48dp"
                     android:layout_weight=".09"
@@ -3932,12 +3720,21 @@
                     android:textSize="14sp" />
 
                 <TextView
-                    android:id="@+id/textView216"
                     android:layout_width="0dp"
                     android:layout_height="48dp"
                     android:layout_weight=".36"
                     android:text="DC +28V VOLTAGE"
                     android:textColor="@color/textViewColor"
+                    android:textSize="14sp" />
+
+                <EditText
+                    android:id="@+id/editText94"
+                    android:layout_width="0dp"
+                    android:layout_height="48dp"
+                    android:layout_weight=".275"
+                    android:ems="10"
+                    android:inputType="number"
+                    android:hint="(29.4-26.6) V (\u00b1 5\u0025)"
                     android:textSize="14sp" />
 
                 <EditText
@@ -3949,16 +3746,6 @@
                     android:inputType="number"
                     android:hint="(29.4-26.6) V (\u00b1 5\u0025)"
                     android:textSize="14sp" />
-
-                <EditText
-                    android:id="@+id/editText96"
-                    android:layout_width="0dp"
-                    android:layout_height="48dp"
-                    android:layout_weight=".275"
-                    android:ems="10"
-                    android:inputType="number"
-                    android:hint="(29.4-26.6) V (\u00b1 5\u0025)"
-                    android:textSize="14sp" />
             </LinearLayout>
 
             <LinearLayout
@@ -3967,7 +3754,6 @@
                 android:layout_marginTop="5dp">
 
                 <TextView
-                    android:id="@+id/textView217"
                     android:layout_width="0dp"
                     android:layout_height="48dp"
                     android:layout_weight=".09"
@@ -3977,12 +3763,20 @@
                     android:textSize="14sp" />
 
                 <TextView
-                    android:id="@+id/textView218"
                     android:layout_width="0dp"
                     android:layout_height="48dp"
                     android:layout_weight=".36"
                     android:text="DC +28A CURRENT"
                     android:textColor="@color/textViewColor"
+                    android:textSize="14sp" />
+
+                <EditText
+                    android:id="@+id/editText96"
+                    android:layout_width="0dp"
+                    android:layout_height="48dp"
+                    android:layout_weight=".275"
+                    android:ems="10"
+                    android:inputType="number"
                     android:textSize="14sp" />
 
                 <EditText
@@ -3993,15 +3787,6 @@
                     android:ems="10"
                     android:inputType="number"
                     android:textSize="14sp" />
-
-                <EditText
-                    android:id="@+id/editText98"
-                    android:layout_width="0dp"
-                    android:layout_height="48dp"
-                    android:layout_weight=".275"
-                    android:ems="10"
-                    android:inputType="number"
-                    android:textSize="14sp" />
             </LinearLayout>
 
             <LinearLayout
@@ -4010,7 +3795,6 @@
                 android:layout_marginTop="5dp">
 
                 <TextView
-                    android:id="@+id/textView219"
                     android:layout_width="0dp"
                     android:layout_height="48dp"
                     android:layout_weight=".09"
@@ -4020,12 +3804,21 @@
                     android:textSize="14sp" />
 
                 <TextView
-                    android:id="@+id/textView220"
                     android:layout_width="0dp"
                     android:layout_height="48dp"
                     android:layout_weight=".36"
                     android:text="DC +15V VOLTAGE"
                     android:textColor="@color/textViewColor"
+                    android:textSize="14sp" />
+
+                <EditText
+                    android:id="@+id/editText98"
+                    android:layout_width="0dp"
+                    android:layout_height="48dp"
+                    android:layout_weight=".275"
+                    android:ems="10"
+                    android:inputType="number"
+                    android:hint="(15.75-14.25) V (\u00b1 5\u0025)"
                     android:textSize="14sp" />
 
                 <EditText
@@ -4037,16 +3830,6 @@
                     android:inputType="number"
                     android:hint="(15.75-14.25) V (\u00b1 5\u0025)"
                     android:textSize="14sp" />
-
-                <EditText
-                    android:id="@+id/editText100"
-                    android:layout_width="0dp"
-                    android:layout_height="48dp"
-                    android:layout_weight=".275"
-                    android:ems="10"
-                    android:inputType="number"
-                    android:hint="(15.75-14.25) V (\u00b1 5\u0025)"
-                    android:textSize="14sp" />
             </LinearLayout>
 
             <LinearLayout
@@ -4055,7 +3838,6 @@
                 android:layout_marginTop="5dp">
 
                 <TextView
-                    android:id="@+id/textView221"
                     android:layout_width="0dp"
                     android:layout_height="48dp"
                     android:layout_weight=".09"
@@ -4065,12 +3847,20 @@
                     android:textSize="14sp" />
 
                 <TextView
-                    android:id="@+id/textView222"
                     android:layout_width="0dp"
                     android:layout_height="48dp"
                     android:layout_weight=".36"
                     android:text="DC +15A CURRENT"
                     android:textColor="@color/textViewColor"
+                    android:textSize="14sp" />
+
+                <EditText
+                    android:id="@+id/editText100"
+                    android:layout_width="0dp"
+                    android:layout_height="48dp"
+                    android:layout_weight=".275"
+                    android:ems="10"
+                    android:inputType="number"
                     android:textSize="14sp" />
 
                 <EditText
@@ -4081,15 +3871,6 @@
                     android:ems="10"
                     android:inputType="number"
                     android:textSize="14sp" />
-
-                <EditText
-                    android:id="@+id/editText102"
-                    android:layout_width="0dp"
-                    android:layout_height="48dp"
-                    android:layout_weight=".275"
-                    android:ems="10"
-                    android:inputType="number"
-                    android:textSize="14sp" />
             </LinearLayout>
 
             <LinearLayout
@@ -4098,7 +3879,6 @@
                 android:layout_marginTop="5dp">
 
                 <TextView
-                    android:id="@+id/textView223"
                     android:layout_width="0dp"
                     android:layout_height="48dp"
                     android:layout_weight=".09"
@@ -4108,7 +3888,6 @@
                     android:textSize="14sp" />
 
                 <TextView
-                    android:id="@+id/textView224"
                     android:layout_width="0dp"
                     android:layout_height="48dp"
                     android:layout_weight=".36"
@@ -4117,7 +3896,7 @@
                     android:textSize="14sp" />
 
                 <EditText
-                    android:id="@+id/editText103"
+                    android:id="@+id/editText102"
                     android:layout_width="0dp"
                     android:layout_height="48dp"
                     android:layout_weight=".275"
@@ -4127,7 +3906,7 @@
                     android:textSize="14sp" />
 
                 <EditText
-                    android:id="@+id/editText104"
+                    android:id="@+id/editText103"
                     android:layout_width="0dp"
                     android:layout_height="48dp"
                     android:layout_weight=".275"
@@ -4143,7 +3922,6 @@
                 android:layout_marginTop="5dp">
 
                 <TextView
-                    android:id="@+id/textView225"
                     android:layout_width="0dp"
                     android:layout_height="48dp"
                     android:layout_weight=".09"
@@ -4153,12 +3931,20 @@
                     android:textSize="14sp" />
 
                 <TextView
-                    android:id="@+id/textView226"
                     android:layout_width="0dp"
                     android:layout_height="48dp"
                     android:layout_weight=".36"
                     android:text="DC +7A CURRENT"
                     android:textColor="@color/textViewColor"
+                    android:textSize="14sp" />
+
+                <EditText
+                    android:id="@+id/editText104"
+                    android:layout_width="0dp"
+                    android:layout_height="48dp"
+                    android:layout_weight=".275"
+                    android:ems="10"
+                    android:inputType="number"
                     android:textSize="14sp" />
 
                 <EditText
@@ -4169,15 +3955,6 @@
                     android:ems="10"
                     android:inputType="number"
                     android:textSize="14sp" />
-
-                <EditText
-                    android:id="@+id/editText106"
-                    android:layout_width="0dp"
-                    android:layout_height="48dp"
-                    android:layout_weight=".275"
-                    android:ems="10"
-                    android:inputType="number"
-                    android:textSize="14sp" />
             </LinearLayout>
 
             <LinearLayout
@@ -4186,7 +3963,6 @@
                 android:layout_marginTop="5dp">
 
                 <TextView
-                    android:id="@+id/textView227"
                     android:layout_width="0dp"
                     android:layout_height="48dp"
                     android:layout_weight=".09"
@@ -4196,7 +3972,6 @@
                     android:textSize="14sp" />
 
                 <TextView
-                    android:id="@+id/textView228"
                     android:layout_width="0dp"
                     android:layout_height="48dp"
                     android:layout_weight=".36"
@@ -4205,7 +3980,7 @@
                     android:textSize="14sp" />
 
                 <EditText
-                    android:id="@+id/editText107"
+                    android:id="@+id/editText106"
                     android:layout_width="0dp"
                     android:layout_height="48dp"
                     android:layout_weight=".275"
@@ -4215,7 +3990,7 @@
                     android:textSize="14sp" />
 
                 <EditText
-                    android:id="@+id/editText108"
+                    android:id="@+id/editText107"
                     android:layout_width="0dp"
                     android:layout_height="48dp"
                     android:layout_weight=".275"
@@ -4231,7 +4006,6 @@
                 android:layout_marginTop="5dp">
 
                 <TextView
-                    android:id="@+id/textView229"
                     android:layout_width="0dp"
                     android:layout_height="48dp"
                     android:layout_weight=".09"
@@ -4241,12 +4015,20 @@
                     android:textSize="14sp" />
 
                 <TextView
-                    android:id="@+id/textView230"
                     android:layout_width="0dp"
                     android:layout_height="48dp"
                     android:layout_weight=".36"
                     android:text="DC +5A CURRENT"
                     android:textColor="@color/textViewColor"
+                    android:textSize="14sp" />
+
+                <EditText
+                    android:id="@+id/editText108"
+                    android:layout_width="0dp"
+                    android:layout_height="48dp"
+                    android:layout_weight=".275"
+                    android:ems="10"
+                    android:inputType="number"
                     android:textSize="14sp" />
 
                 <EditText
@@ -4257,50 +4039,32 @@
                     android:ems="10"
                     android:inputType="number"
                     android:textSize="14sp" />
-
-                <EditText
-                    android:id="@+id/editText110"
-                    android:layout_width="0dp"
-                    android:layout_height="48dp"
-                    android:layout_weight=".275"
-                    android:ems="10"
-                    android:inputType="number"
-                    android:textSize="14sp" />
             </LinearLayout>
 
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="8dp">
+                android:layout_height="72dp"
+                android:layout_marginTop="5dp">
 
                 <TextView
-                    android:id="@+id/textView231"
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
-                    android:layout_weight=".09"
-                    android:text="11.0"
-                    android:textAlignment="center"
+                    android:layout_weight=".55"
+                    android:gravity="left|center"
+                    android:text="Remarks(Any deviation observed/ Action taken):"
                     android:textColor="@color/textViewColor"
-                    android:textSize="14sp" />
-
-                <TextView
-                    android:id="@+id/textView232"
-                    android:layout_width="0dp"
-                    android:layout_height="match_parent"
-                    android:layout_weight=".36"
-                    android:text="Remarks: "
-                    android:textColor="@color/textViewColor" />
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
 
                 <EditText
-                    android:id="@+id/editText111"
+                    android:id="@+id/editText110"
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
-                    android:layout_weight="0.55"
+                    android:layout_weight=".45"
                     android:ems="10"
-                    android:inputType="textMultiLine"
                     android:hint="Enter Remark here"
-                    android:textColor="@color/textViewColor" />
-
+                    android:inputType="textMultiLine"
+                    android:textSize="14sp" />
             </LinearLayout>
 
             <GridLayout
@@ -4313,9 +4077,9 @@
                     android:layout_height="wrap_content"
                     android:layout_row="0"
                     android:layout_column="0"
-                    android:gravity="center"
                     android:layout_gravity="center_horizontal"
                     android:backgroundTint="@color/teal_700"
+                    android:gravity="center"
                     android:text="Submit Schedule" />
 
                 <Button
@@ -4324,9 +4088,9 @@
                     android:layout_height="wrap_content"
                     android:layout_row="0"
                     android:layout_column="0"
-                    android:gravity="center"
                     android:layout_gravity="center_horizontal"
                     android:backgroundTint="@color/teal_700"
+                    android:gravity="center"
                     android:text="Sign Document" />
 
             </GridLayout>
@@ -4334,19 +4098,20 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:gravity="center"
                 android:layout_marginTop="8dp"
-                android:layout_marginBottom="10dp">
+                android:layout_marginBottom="10dp"
+                android:gravity="center">
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
-                    android:textStyle="bold|italic"
+                    android:text="Form Created by: Vipin K. Singh"
                     android:textColor="@color/textViewColor"
-                    android:text="Form Created by: Vipin K Singh"
-                    android:textSize="14sp"/>
+                    android:textSize="14sp"
+                    android:textStyle="bold|italic" />
 
             </LinearLayout>
+
 
         </LinearLayout>
 

@@ -60,7 +60,7 @@ public class DVORMopiensWeeklyActivity extends AppCompatActivity {
                 editText41, editText42, editText43, editText44, editText45, editText46, editText47, editText48, editText49, editText50, editText51, editText52, editText53, editText54, editText55, editText56, editText57, editText58,editText59, editText60,
                 editText61, editText62,editText63, editText64, editText65, editText66, editText67, editText68,editText69, editText70, editText71, editText72, editText73, editText74, editText75, editText76, editText77, editText78, editText79, editText80,
                 editText81, editText82, editText83, editText84, editText85, editText86, editText87, editText88,editText89,editText90, editText91, editText92, editText93, editText94,editText95, editText96, editText97, editText98,editText99, editText100,
-                editText101, editText102, editText103, editText104, editText105, editText106, editText107, editText108, editText109, editText110, editText111;
+                editText101, editText102, editText103, editText104, editText105, editText106, editText107, editText108, editText109, editText110;
 
         editTextArray =  new EditText[]{editText1 = (EditText) findViewById(R.id.editText1),
                 editText2 = (EditText) findViewById(R.id.editText2),
@@ -171,8 +171,7 @@ public class DVORMopiensWeeklyActivity extends AppCompatActivity {
                 editText107 = (EditText) findViewById(R.id.editText107),
                 editText108 = (EditText) findViewById(R.id.editText108),
                 editText109 = (EditText) findViewById(R.id.editText109),
-                editText110 = (EditText) findViewById(R.id.editText110),
-                editText111 = (EditText) findViewById(R.id.editText111)};
+                editText110 = (EditText) findViewById(R.id.editText110)};
 
         //Define and Initialize all Switches serially here
 
@@ -210,14 +209,20 @@ public class DVORMopiensWeeklyActivity extends AppCompatActivity {
 
         //---------------------To Set View in Current Activity------------------
         // Fixed for all the activity---------------------------------------------------------------
+        TextView textView1 = (TextView) findViewById(R.id.textView1);
+        textView1.setText("Name: " + PersonalDetailsActivity.naam);
+        TextView textView2 = (TextView) findViewById(R.id.textView2);
+        textView2.setText("Designation: " + PersonalDetailsActivity.design);
         TextView textView3 = (TextView) findViewById(R.id.textView3);
-        textView3.setText("Name: " + PersonalDetailsActivity.naam);
+        textView3.setText("Emp No.: " + PersonalDetailsActivity.EmpID);
         TextView textView4 = (TextView) findViewById(R.id.textView4);
-        textView4.setText("Designation: " + PersonalDetailsActivity.design);
-        TextView textView5 = (TextView) findViewById(R.id.textView5);
-        textView5.setText("Emp No.: " + PersonalDetailsActivity.EmpID);
-        TextView textView6 = (TextView) findViewById(R.id.textView6);
-        textView6.setText("Location: " + MainActivity.latLong1);
+        textView4.setText("Location: " + MainActivity.latLong1);
+
+        TextView textViewDate = (TextView) findViewById(R.id.textViewDate);
+        Calendar calendar = Calendar.getInstance();
+        SimpleDateFormat sdf = new SimpleDateFormat("dd:MM:yyyy HH:mm");
+        String strData = sdf.format(calendar.getTime());
+        textViewDate.setText(strData);
 
         Intent receivedIntent = getIntent();
         //now get the itemID we passed as an extra
@@ -308,7 +313,7 @@ public class DVORMopiensWeeklyActivity extends AppCompatActivity {
 
         canvas.drawBitmap(scaledbmp,0 , 0, paint);
 
-        titlePaint.setTextSize(30);
+        titlePaint.setTextSize(12);
         paint.setTextAlign(Paint.Align.LEFT);
         //canvas.drawText("Name: " + PersonalDetailsActivity.naam ,1500,32,titlePaint);
         //canvas.drawText("Desig: " + PersonalDetailsActivity.design ,1500,64,titlePaint);
@@ -317,12 +322,12 @@ public class DVORMopiensWeeklyActivity extends AppCompatActivity {
         //canvas.drawBitmap(PersonalDetailsActivity.photo, 1630, 130, paint);
         //--------------------------------Change as per your requirement------------------------------------------------------
         // canvas.drawBitmap(Bitmap.createScaledBitmap(PersonalDetailsActivity.sigNature,500,510, false), 1325, 2720, paint);
-        titlePaint.setTextSize(30);
+        titlePaint.setTextSize(12);
 
-        int[] editTextXPixel1 = {138,360,159,359,480,480,480,480,350,432,350,432,350,432,350,432,490,560,490,560,490,560};
-        int[] editTextYPixel1 = {170,170,202,202,202,268,284,300,368,368,430,430,530,530,594,594,841,841,864,864,867,867};
+        int[] editTextXPixel1 = {138,360,159,360,480,480,480,350,432,350,432,350,432,350,432,490,560,490,560,490,560};
+        int[] editTextYPixel1 = {170,170,202,202,268,284,300,368,368,430,430,530,530,594,594,841,841,857,857,875,875};
 
-        int[] switchXPixel1 = {360,560,360,560,360,560,360,560,490,490,490};
+        int[] switchXPixel1 = {350,432,350,432,350,432,350,432,490,490,490};
         int[] switchYPixel1 = {398,398,446,446,560,560,610,610,706,738,770};
 
         //int[] spinnerXPixel = {1400,1400,1400,1400,1400,1400,1400,1400,1400};
@@ -351,9 +356,9 @@ public class DVORMopiensWeeklyActivity extends AppCompatActivity {
         // Fixed till here--------------------------------------------------------------------------
 
         // Change as per your requirement-----------------------------------------------------------
-        titlePaint.setTextSize(40);
+        titlePaint.setTextSize(12);
 
-        //canvas.drawText(strData,1568,425,titlePaint);//Printing Date on PDF
+        canvas.drawText(strData,480,202,titlePaint);//Printing Date on PDF
 
         myPdfdocument.finishPage(myPage1);
 
@@ -372,16 +377,16 @@ public class DVORMopiensWeeklyActivity extends AppCompatActivity {
         scaledbmp = Bitmap.createScaledBitmap(bmp,723,1023,false);
         canvas.drawBitmap(scaledbmp,0 , 0, paint);
 
-        titlePaint.setTextSize(30);
+        titlePaint.setTextSize(12);
         paint.setTextAlign(Paint.Align.LEFT);
 
-        titlePaint.setTextSize(30);
+        titlePaint.setTextSize(12);
 
         int[] editTextXPixel2 = {490,560,490,560,490,560,490,560,490,560,490,560,490,560,362,510,362,510,362,510,362,510,362,510,362,510,362,510,362,510,362,510,362,510,362,510,362,510,362,510,362,510,362,510,362,510,390,390};
-        int[] editTextYPixel2 = {125,125,145,145,185,185,205,205,225,225,245,245,265,265,330,330,350,350,370,370,390,390,410,410,430,430,450,450,470,470,530,530,550,550,570,570,590,590,610,610,630,630,710,710,730,730,828,845};
+        int[] editTextYPixel2 = {125,125,142,142,177,177,194,194,210,210,228,228,247,247,330,330,348,348,370,370,390,390,408,408,425,425,445,445,463,463,517,517,534,534,554,554,576,576,596,596,619,619,694,694,711,711,828,845};
 
         int[] switchXPixel2 = {490,560,362,510,362,510,362,510,362,510,362,510,390,390};
-        int[] switchYPixel2 = {165,165,490,490,510,510,650,650,670,670,690,690,862,879};
+        int[] switchYPixel2 = {159,159,484,484,500,500,635,635,655,655,676,676,860,875};
 
 
         for(int i = 0; i < editTextXPixel2.length; i++){
@@ -408,10 +413,10 @@ public class DVORMopiensWeeklyActivity extends AppCompatActivity {
         scaledbmp = Bitmap.createScaledBitmap(bmp,723,1023,false);
         canvas.drawBitmap(scaledbmp,0 , 0, paint);
 
-        titlePaint.setTextSize(30);
+        titlePaint.setTextSize(12);
         paint.setTextAlign(Paint.Align.LEFT);
 
-        titlePaint.setTextSize(30);
+        titlePaint.setTextSize(12);
 
         int[] editTextXPixel3 = {372,448,372,448,372,448,372,448,372,448,372,448,372,448,372,448,444,530,444,530};
         int[] editTextYPixel3 = {230,230,260,260,276,276,294,294,445,445,485,485,525,525,565,565,723,723,750,750};
@@ -437,13 +442,13 @@ public class DVORMopiensWeeklyActivity extends AppCompatActivity {
         scaledbmp = Bitmap.createScaledBitmap(bmp,723,1023,false);
         canvas.drawBitmap(scaledbmp,0 , 0, paint);
 
-        titlePaint.setTextSize(30);
+        titlePaint.setTextSize(12);
         paint.setTextAlign(Paint.Align.LEFT);
 
-        titlePaint.setTextSize(30);
+        titlePaint.setTextSize(12);
 
         int[] editTextXPixel4 = {456,537,456,537,456,537,456,537,456,537,456,537,456,537,456,537,456,537,456,537,196};
-        int[] editTextYPixel4 = {210,210,235,235,260,260,285,285,310,310,335,335,360,360,385,385,410,410,435,435,480};
+        int[] editTextYPixel4 = {209,209,233,233,254,254,275,275,299,299,321,321,342,342,364,364,390,390,412,412,480};
 
 
         for(int i = 0; i < editTextXPixel4.length; i++){
@@ -452,7 +457,7 @@ public class DVORMopiensWeeklyActivity extends AppCompatActivity {
 
 
         //canvas.drawBitmap(Bitmap.createScaledBitmap(PersonalDetailsActivity.photo, 210, 270, false), 93, 480, paint);
-        canvas.drawBitmap(Bitmap.createScaledBitmap(PersonalDetailsActivity.sigNature, 290, 270, false), 370, 600, paint);
+        canvas.drawBitmap(Bitmap.createScaledBitmap(PersonalDetailsActivity.sigNature, 290, 270, false), 80, 535, paint);
         myPdfdocument.finishPage(myPage4);
 
         //-------------------------End of Page 4-----------------
@@ -484,7 +489,7 @@ public class DVORMopiensWeeklyActivity extends AppCompatActivity {
         String specificCode = new SimpleDateFormat("dd-MM-yyyy", Locale.getDefault()).format(new Date());// Change Here----------------------------
         //This function saves all the data to parse Server
         //myFunctions.saveToParse(String targetPdf, String fileName, String Equipment,String Schedule_Type,String EditTextData)
-        myFunctions.saveToParse(targetPdf, fileName,"DVOR_MOPIENS_MARU220","Weekly",outputEditText,MyFunctions.specificCode("w"),outputSwitch, "outputSpinner");// Change Here-----------------------
+        myFunctions.saveToParse(targetPdf, fileName,"DVOR","Weekly",outputEditText,MyFunctions.specificCode("w"),outputSwitch, "outputSpinner");// Change Here-----------------------
 
         // This function will send eMail using JavaMailAPI
         //myFunctions.sendEmail(String To, String Subject, String Message,String targetPdf,String desired_Filename)
