@@ -185,14 +185,14 @@ public class AutomationIndraB2cDaily extends AppCompatActivity {
         // Fixed for all the activity---------------------------------------------------------------
         //ImageView imageView10 = (ImageView) findViewById(R.id.imageView10);
         //imageView10.setImageBitmap(PersonalDetailsActivity.photo);
-        TextView textView7 = (TextView) findViewById(R.id.textView1);
-        textView7.setText("Name: " + PersonalDetailsActivity.naam);
-        TextView textView8 = (TextView) findViewById(R.id.textView2);
-        textView8.setText("Designation: " + PersonalDetailsActivity.design);
-        TextView textView10 = (TextView) findViewById(R.id.textView3);
-        textView10.setText("Emp No.: " + PersonalDetailsActivity.EmpID);
-        TextView textView9 = (TextView) findViewById(R.id.textView4);
-        textView9.setText("Location: " + MainActivity.latLong1);
+        TextView textView1 = (TextView) findViewById(R.id.textView1);
+        textView1.setText("Name: " + PersonalDetailsActivity.naam);
+        TextView textView2 = (TextView) findViewById(R.id.textView2);
+        textView2.setText("Designation: " + PersonalDetailsActivity.design);
+        TextView textView3 = (TextView) findViewById(R.id.textView3);
+        textView3.setText("Emp No.: " + PersonalDetailsActivity.EmpID);
+        TextView textView4 = (TextView) findViewById(R.id.textView4);
+        textView4.setText("Location: " + MainActivity.latLong1);
 
         TextView textViewDate = (TextView) findViewById(R.id.textViewDate);
         Calendar calendar = Calendar.getInstance();

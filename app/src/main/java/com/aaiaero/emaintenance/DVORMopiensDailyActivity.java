@@ -58,7 +58,7 @@ public class DVORMopiensDailyActivity extends AppCompatActivity  {
         EditText editText1, editText2, editText3, editText4, editText5, editText6, editText7, editText8,editText9, editText10, editText11, editText12, editText13, editText14, editText15, editText16,
                 editText17, editText18, editText19, editText20, editText21, editText22, editText23, editText24,editText25, editText26, editText27, editText28, editText29, editText30, editText31, editText32,
                 editText33, editText34, editText35, editText36, editText37, editText38, editText39, editText40, editText41, editText42, editText43, editText44, editText45, editText46, editText47, editText48,
-                editText49, editText50, editText51, editText52, editText53, editText54, editText55, editText56, editText57, editText58,editText59, editText60;
+                editText49, editText50, editText51, editText52, editText53, editText54, editText55, editText56, editText57, editText58,editText59;
 
         editTextArray =  new EditText[] { editText1 = (EditText) findViewById(R.id.editText1),
                 editText2 = (EditText) findViewById(R.id.editText2),
@@ -118,8 +118,7 @@ public class DVORMopiensDailyActivity extends AppCompatActivity  {
                 editText56 = (EditText) findViewById(R.id.editText56),
                 editText57 = (EditText) findViewById(R.id.editText57),
                 editText58 = (EditText) findViewById(R.id.editText58),
-                editText59 = (EditText) findViewById(R.id.editText59),
-                editText60 = (EditText) findViewById(R.id.editText60)};
+                editText59 = (EditText) findViewById(R.id.editText59)};
 
 
         //Define and Initialize all Switches serially here
@@ -129,16 +128,22 @@ public class DVORMopiensDailyActivity extends AppCompatActivity  {
 
         //---------------------To Set View in Current Activity------------------
         // Fixed for all the activity---------------------------------------------------------------
-        //ImageView imageView2 = (ImageView) findViewById(R.id.imageView2);
-       // imageView2.setImageBitmap(PersonalDetailsActivity.photo);
+        //ImageView imageView10 = (ImageView) findViewById(R.id.imageView10);
+        //imageView10.setImageBitmap(PersonalDetailsActivity.photo);
+        TextView textView1 = (TextView) findViewById(R.id.textView1);
+        textView1.setText("Name: " + PersonalDetailsActivity.naam);
+        TextView textView2 = (TextView) findViewById(R.id.textView2);
+        textView2.setText("Designation: " + PersonalDetailsActivity.design);
         TextView textView3 = (TextView) findViewById(R.id.textView3);
-        textView3.setText("Name: " + PersonalDetailsActivity.naam);
+        textView3.setText("Emp No.: " + PersonalDetailsActivity.EmpID);
         TextView textView4 = (TextView) findViewById(R.id.textView4);
-        textView4.setText("Designation: " + PersonalDetailsActivity.design);
-        TextView textView5 = (TextView) findViewById(R.id.textView5);
-        textView5.setText("Emp No.: " + PersonalDetailsActivity.EmpID);
-        TextView textView6 = (TextView) findViewById(R.id.textView6);
-        textView6.setText("Location: " + MainActivity.latLong1);
+        textView4.setText("Location: " + MainActivity.latLong1);
+
+        TextView textViewDate = (TextView) findViewById(R.id.textViewDate);
+        Calendar calendar = Calendar.getInstance();
+        SimpleDateFormat sdf = new SimpleDateFormat("dd:MM:yyyy HH:mm");
+        String strData = sdf.format(calendar.getTime());
+        textViewDate.setText(strData);
 
         Intent receivedIntent = getIntent();
         //now get the itemID we passed as an extra
@@ -230,7 +235,7 @@ public class DVORMopiensDailyActivity extends AppCompatActivity  {
         canvas.drawBitmap(scaledbmp,0 , 0, paint);
 
 
-        titlePaint.setTextSize(30);
+        titlePaint.setTextSize(12);
         paint.setTextAlign(Paint.Align.LEFT);
         //canvas.drawText("Name: " + PersonalDetailsActivity.naam ,1500,32,titlePaint);
         //canvas.drawText("Desig: " + PersonalDetailsActivity.design ,1500,64,titlePaint);
@@ -239,10 +244,10 @@ public class DVORMopiensDailyActivity extends AppCompatActivity  {
         //canvas.drawBitmap(PersonalDetailsActivity.photo, 1630, 130, paint);
         //--------------------------------Change as per your requirement------------------------------------------------------
         // canvas.drawBitmap(Bitmap.createScaledBitmap(PersonalDetailsActivity.sigNature,500,510, false), 1325, 2720, paint);
-        titlePaint.setTextSize(30);
+        titlePaint.setTextSize(12);
 
-        int[] editTextXPixel1 = {138,360,159,359,559,540,540,540,540,540,540,540,540,540,540,540,540,540,540,540,510,600,510,600,510,600,510,600,510,600,510,600,510,600,510,600,510,600,510,600,510,600};
-        int[] editTextYPixel1 = {177,177,210,210,210,290,305,334,348,374,390,405,420,445,463,477,490,505,520,548,625,625,642,642,656,656,670,670,690,690,705,705,720,720,736,736,752,752,768,768,784,784};
+        int[] editTextXPixel1 = {138,360,159,359,540,540,540,540,540,540,540,540,540,540,540,540,540,540,540,510,600,510,600,510,600,510,600,510,600,510,600,510,600,510,600,510,600,510,600,510,600};
+        int[] editTextYPixel1 = {177,177,210,210,290,305,334,348,374,390,405,420,445,463,477,490,505,520,548,625,625,642,642,656,656,670,670,690,690,705,705,720,720,736,736,752,752,768,768,784,784};
 
         //int[] switchXPixel = {1400,1400,1400,1400,1400,1400,1400,1400,1400,1400,1400};
         //int[] switchYPixel = {645,768,809,950,1623,2023,2190,2319,2403,2530,2660};
@@ -273,9 +278,9 @@ public class DVORMopiensDailyActivity extends AppCompatActivity  {
         // Fixed till here--------------------------------------------------------------------------
 
         // Change as per your requirement-----------------------------------------------------------
-        titlePaint.setTextSize(40);
+        titlePaint.setTextSize(12);
 
-        //canvas.drawText(strData,1568,425,titlePaint);//Printing Date on PDF
+        canvas.drawText(strData,560,208,titlePaint);//Printing Date on PDF
 
         myPdfdocument.finishPage(myPage1);
 
@@ -294,16 +299,16 @@ public class DVORMopiensDailyActivity extends AppCompatActivity  {
         scaledbmp = Bitmap.createScaledBitmap(bmp,723,1023,false);
         canvas.drawBitmap(scaledbmp,0 , 0, paint);
 
-        titlePaint.setTextSize(30);
+        titlePaint.setTextSize(12);
         paint.setTextAlign(Paint.Align.LEFT);
 
-        titlePaint.setTextSize(30);
+        titlePaint.setTextSize(12);
 
         int[] editTextXPixel2 = {550,550,550,526,602,526,602,526,602,526,602,526,602,526,602,526,602,206};
         int[] editTextYPixel2 = {174,188,203,222,222,237,237,252,252,268,268,284,284,300,300,319,319,372};
 
         for(int i = 0; i < editTextXPixel2.length; i++){
-            canvas.drawText( editTextDataForPDF[i],editTextXPixel2[i],editTextYPixel2[i],titlePaint);
+            canvas.drawText(editTextDataForPDF[i+editTextXPixel1.length],editTextXPixel2[i],editTextYPixel2[i],titlePaint);
         }
 
         //canvas.drawBitmap(Bitmap.createScaledBitmap(PersonalDetailsActivity.photo, 210, 270, false), 93, 480, paint);
@@ -339,7 +344,7 @@ public class DVORMopiensDailyActivity extends AppCompatActivity  {
         String specificCode = new SimpleDateFormat("dd-MM-yyyy", Locale.getDefault()).format(new Date());// Change Here----------------------------
         //This function saves all the data to parse Server
         //myFunctions.saveToParse(String targetPdf, String fileName, String Equipment,String Schedule_Type,String EditTextData)
-        myFunctions.saveToParse(targetPdf, fileName,"DVOR_MOPIENS_MARU220","Daily",outputEditText,MyFunctions.specificCode("d"),"outputSwitch", "outputSpinner");// Change Here-----------------------
+        myFunctions.saveToParse(targetPdf, fileName,"DVOR","Daily",outputEditText,MyFunctions.specificCode("d"),"outputSwitch", "outputSpinner");// Change Here-----------------------
 
         // This function will send eMail using JavaMailAPI
         //myFunctions.sendEmail(String To, String Subject, String Message,String targetPdf,String desired_Filename)

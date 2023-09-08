@@ -34,7 +34,7 @@
                     android:layout_width="0dp"
                     android:layout_height="60dp"
                     android:layout_weight=".4"
-                    android:text="AIRPORTS AUTHORITY OF INDIA"
+                    android:text="Airports Authority of India"
                     android:textColor="@color/textViewColor"
                     android:textSize="14sp" />
 
