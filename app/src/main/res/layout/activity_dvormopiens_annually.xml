@@ -7,7 +7,8 @@
     android:layout_height="match_parent"
     android:layout_gravity="center_horizontal|center_vertical"
     android:layout_margin="10dp"
-    tools:context=".DVORMopiensAnnuallyActivity">
+    tools:context=".DVORMopiensAnnuallyActivity"
+    tools:ignore="MissingClass">
 
     <ScrollView
         android:id="@+id/scrollView"
@@ -31,7 +32,6 @@
                 android:layout_marginTop="5dp">
 
                 <TextView
-                    android:id="@+id/textView1"
                     android:layout_width="0dp"
                     android:layout_height="60dp"
                     android:layout_weight=".4"
@@ -47,11 +47,10 @@
                     app:srcCompat="@drawable/logoaai" />
 
                 <TextView
-                    android:id="@+id/textView2"
                     android:layout_width="0dp"
                     android:layout_height="60dp"
                     android:layout_weight=".4"
-                    android:text="CNS Manual Vol.VII Part 2"
+                    android:text="CNS MANUAL Vol.VII Part 2"
                     android:textAlignment="viewEnd"
                     android:textColor="@color/textViewColor"
                     android:textSize="14sp" />
@@ -61,10 +60,10 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="8dp">
+                android:layout_marginTop="5dp">
 
                 <TextView
-                    android:id="@+id/textView3"
+                    android:id="@+id/textView1"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="Name: "
@@ -80,7 +79,7 @@
                 android:layout_marginTop="2dp">
 
                 <TextView
-                    android:id="@+id/textView4"
+                    android:id="@+id/textView2"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="Desig: "
@@ -96,7 +95,7 @@
                 android:layout_marginTop="2dp">
 
                 <TextView
-                    android:id="@+id/textView5"
+                    android:id="@+id/textView3"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="Emp No.: "
@@ -111,7 +110,7 @@
                 android:layout_marginTop="2dp">
 
                 <TextView
-                    android:id="@+id/textView6"
+                    android:id="@+id/textView4"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="Location: "
@@ -127,7 +126,6 @@
                 android:layout_marginTop="2dp">
 
                 <TextView
-                    android:id="@+id/textView7"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="Preventive Maintenance Schedule - Annual (DVOR-Mopiens MARU-220) "
@@ -144,7 +142,6 @@
                 android:layout_marginTop="2dp">
 
                 <TextView
-                    android:id="@+id/textView8"
                     android:layout_width="0dp"
                     android:layout_height="48dp"
                     android:layout_weight=".17"
@@ -163,7 +160,6 @@
                     android:textSize="14sp" />
 
                 <TextView
-                    android:id="@+id/textView9"
                     android:layout_width="0dp"
                     android:layout_height="48dp"
                     android:layout_weight=".2"
@@ -190,7 +186,6 @@
                 android:layout_marginTop="2dp">
 
                 <TextView
-                    android:id="@+id/textView10"
                     android:layout_width="0dp"
                     android:layout_height="48dp"
                     android:layout_weight=".17"
@@ -209,7 +204,6 @@
                     android:textSize="14sp" />
 
                 <TextView
-                    android:id="@+id/textView11"
                     android:layout_width="0dp"
                     android:layout_height="48dp"
                     android:layout_weight=".17"
@@ -229,7 +223,6 @@
                     android:textSize="14sp" />
 
                 <TextView
-                    android:id="@+id/textView12"
                     android:layout_width="0dp"
                     android:layout_height="48dp"
                     android:layout_weight=".17"
@@ -239,14 +232,14 @@
                     android:textSize="14sp" />
 
 
-                <EditText
-                    android:id="@+id/editText5"
+                <TextView
+                    android:id="@+id/textViewDate"
                     android:layout_width="0dp"
                     android:layout_height="48dp"
                     android:layout_weight=".15"
-                    android:ems="10"
-                    android:inputType="date"
-                    android:textSize="14sp" />
+                    android:text=""
+                    android:textColor="@color/textViewColor" />
+
             </LinearLayout>
 
             <LinearLayout
@@ -255,7 +248,6 @@
                 android:layout_marginTop="10dp">
 
                 <TextView
-                    android:id="@+id/textView13"
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:layout_weight=".09"
@@ -266,7 +258,6 @@
                     android:textSize="16sp" />
 
                 <TextView
-                    android:id="@+id/textView14"
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:layout_weight=".65"
@@ -277,7 +268,6 @@
 
 
                 <TextView
-                    android:id="@+id/textView117"
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:layout_weight=".26"
@@ -293,7 +283,6 @@
                 android:layout_marginTop="10dp">
 
                 <TextView
-                    android:id="@+id/textView16"
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:layout_weight=".09"
@@ -303,7 +292,6 @@
                     android:textSize="14sp" />
 
                 <TextView
-                    android:id="@+id/textView115"
                     android:layout_width="17dp"
                     android:layout_height="match_parent"
                     android:layout_weight=".35"
@@ -312,11 +300,51 @@
                     android:textSize="14sp" />
 
                 <TextView
-                    android:id="@+id/textView116"
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:layout_weight=".30"
                     android:text="Free from corrosion \nbreaks, cracks \u0026 burns. "
+                    android:textColor="@color/textViewColor"
+                    android:textSize="14sp" />
+
+                <EditText
+                    android:id="@+id/editText5"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight=".26"
+                    android:ems="10"
+                    android:inputType="text"
+                    android:textSize="14sp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight=".09"
+                    android:text="1.2"
+                    android:textAlignment="center"
+                    android:textColor="@color/textViewColor"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:layout_width="17dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight=".35"
+                    android:text="Rf Connectors "
+                    android:textColor="@color/textViewColor"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight=".30"
+                    android:text="Properlt tightened."
                     android:textColor="@color/textViewColor"
                     android:textSize="14sp" />
 
@@ -334,33 +362,65 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="5dp">
+                android:layout_marginTop="10dp">
 
                 <TextView
-                    android:id="@+id/textView19"
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:layout_weight=".09"
-                    android:text="1.2"
+                    android:text="2.0"
+                    android:textStyle="bold"
+                    android:textAlignment="center"
+                    android:textColor="@color/teal_700"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight=".65"
+                    android:textStyle="bold"
+                    android:text="Inspection of Antenna System \u0026 Counterpoise "
+                    android:textColor="@color/teal_700"
+                    android:textSize="16sp" />
+
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight=".26"
+                    android:text="Observation"
+                    android:textStyle="bold"
+                    android:textColor="@color/teal_700"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight=".09"
+                    android:text="2.1"
                     android:textAlignment="center"
                     android:textColor="@color/textViewColor"
                     android:textSize="14sp" />
 
                 <TextView
-                    android:id="@+id/textView20"
-                    android:layout_width="17dp"
+                    android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:layout_weight=".35"
-                    android:text="Rf Connectors "
+                    android:text="Antenna Physical Status "
                     android:textColor="@color/textViewColor"
                     android:textSize="14sp" />
 
                 <TextView
-                    android:id="@+id/textView21"
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:layout_weight=".30"
-                    android:text="Properlt tightened."
+                    android:text="Good "
                     android:textColor="@color/textViewColor"
                     android:textSize="14sp" />
 
@@ -378,67 +438,26 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="10dp">
+                android:layout_marginTop="5dp">
 
                 <TextView
-                    android:id="@+id/textView22"
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:layout_weight=".09"
-                    android:text="2.0"
-                    android:textStyle="bold"
-                    android:textAlignment="center"
-                    android:textColor="@color/teal_700"
-                    android:textSize="16sp" />
-
-                <TextView
-                    android:id="@+id/textView23"
-                    android:layout_width="0dp"
-                    android:layout_height="match_parent"
-                    android:layout_weight=".65"
-                    android:textStyle="bold"
-                    android:text="Inspection of Antenna System \u0026 Counterpoise "
-                    android:textColor="@color/teal_700"
-                    android:textSize="16sp" />
-
-
-                <TextView
-                    android:id="@+id/textView24"
-                    android:layout_width="0dp"
-                    android:layout_height="match_parent"
-                    android:layout_weight=".26"
-                    android:text="Observation"
-                    android:textStyle="bold"
-                    android:textColor="@color/teal_700"
-                    android:textSize="16sp" />
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="10dp">
-
-                <TextView
-                    android:id="@+id/textView25"
-                    android:layout_width="0dp"
-                    android:layout_height="match_parent"
-                    android:layout_weight=".09"
-                    android:text="2.1"
+                    android:text="2.2"
                     android:textAlignment="center"
                     android:textColor="@color/textViewColor"
                     android:textSize="14sp" />
 
                 <TextView
-                    android:id="@+id/textView26"
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:layout_weight=".35"
-                    android:text="Antenna Physical Status "
+                    android:text="Counterpoise Physical Status "
                     android:textColor="@color/textViewColor"
                     android:textSize="14sp" />
 
                 <TextView
-                    android:id="@+id/textView27"
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:layout_weight=".30"
@@ -463,30 +482,27 @@
                 android:layout_marginTop="5dp">
 
                 <TextView
-                    android:id="@+id/textView28"
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:layout_weight=".09"
-                    android:text="2.2"
+                    android:text="2.3"
                     android:textAlignment="center"
                     android:textColor="@color/textViewColor"
                     android:textSize="14sp" />
 
                 <TextView
-                    android:id="@+id/textView29"
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:layout_weight=".35"
-                    android:text="Counterpoise Physical Status "
+                    android:text="Ground Strips connections "
                     android:textColor="@color/textViewColor"
                     android:textSize="14sp" />
 
                 <TextView
-                    android:id="@+id/textView30"
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:layout_weight=".30"
-                    android:text="Good "
+                    android:text="Good Condition"
                     android:textColor="@color/textViewColor"
                     android:textSize="14sp" />
 
@@ -507,30 +523,27 @@
                 android:layout_marginTop="5dp">
 
                 <TextView
-                    android:id="@+id/textView31"
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:layout_weight=".09"
-                    android:text="2.3"
+                    android:text="2.4"
                     android:textAlignment="center"
                     android:textColor="@color/textViewColor"
                     android:textSize="14sp" />
 
                 <TextView
-                    android:id="@+id/textView32"
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:layout_weight=".35"
-                    android:text="Ground Strips connections "
+                    android:text="RF Cables \u0026 Connectors status "
                     android:textColor="@color/textViewColor"
                     android:textSize="14sp" />
 
                 <TextView
-                    android:id="@+id/textView33"
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:layout_weight=".30"
-                    android:text="Good Condition"
+                    android:text="Properly connected \u0026 \nshielding normal"
                     android:textColor="@color/textViewColor"
                     android:textSize="14sp" />
 
@@ -542,7 +555,6 @@
                     android:ems="10"
                     android:inputType="text"
                     android:textSize="14sp" />
-
             </LinearLayout>
 
             <LinearLayout
@@ -551,26 +563,23 @@
                 android:layout_marginTop="5dp">
 
                 <TextView
-                    android:id="@+id/textView34"
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:layout_weight=".09"
-                    android:text="2.4"
+                    android:text="2.5"
                     android:textAlignment="center"
                     android:textColor="@color/textViewColor"
                     android:textSize="14sp" />
 
                 <TextView
-                    android:id="@+id/textView35"
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:layout_weight=".35"
-                    android:text="RF Cables \u0026 Connectors status "
+                    android:text="Monitor Cables \u0026 Connectors status "
                     android:textColor="@color/textViewColor"
                     android:textSize="14sp" />
 
                 <TextView
-                    android:id="@+id/textView36"
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:layout_weight=".30"
@@ -591,35 +600,34 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="5dp">
+                android:layout_marginTop="10dp">
 
                 <TextView
-                    android:id="@+id/textView37"
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:layout_weight=".09"
-                    android:text="2.5"
+                    android:text="3.0"
+                    android:textStyle="bold"
                     android:textAlignment="center"
-                    android:textColor="@color/textViewColor"
-                    android:textSize="14sp" />
+                    android:textColor="@color/teal_700"
+                    android:textSize="16sp" />
 
                 <TextView
-                    android:id="@+id/textView38"
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:layout_weight=".35"
-                    android:text="Monitor Cables \u0026 Connectors status "
-                    android:textColor="@color/textViewColor"
-                    android:textSize="14sp" />
+                    android:textStyle="bold"
+                    android:text="Premonsoon Check "
+                    android:textColor="@color/teal_700"
+                    android:textSize="16sp" />
 
                 <TextView
-                    android:id="@+id/textView39"
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:layout_weight=".30"
-                    android:text="Properly connected \u0026 \nshielding normal"
+                    android:text="Carried out(If yes give date)/ \u0026Not carried out"
                     android:textColor="@color/textViewColor"
-                    android:textSize="14sp" />
+                    android:textSize="16sp" />
 
                 <EditText
                     android:id="@+id/editText12"
@@ -633,89 +641,33 @@
 
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="10dp">
+                android:layout_height="72dp"
+                android:layout_marginTop="5dp">
 
                 <TextView
-                    android:id="@+id/textView40"
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
-                    android:layout_weight=".09"
-                    android:text="3.0"
-                    android:textStyle="bold"
-                    android:textAlignment="center"
-                    android:textColor="@color/teal_700"
-                    android:textSize="16sp" />
-
-                <TextView
-                    android:id="@+id/textView41"
-                    android:layout_width="0dp"
-                    android:layout_height="match_parent"
-                    android:layout_weight=".35"
-                    android:textStyle="bold"
-                    android:text="Premonsoon Check "
-                    android:textColor="@color/teal_700"
-                    android:textSize="16sp" />
-
-                <TextView
-                    android:id="@+id/textView42"
-                    android:layout_width="0dp"
-                    android:layout_height="match_parent"
-                    android:layout_weight=".30"
-                    android:text="Carried out(If yes give date)/ \u0026Not carried out"
+                    android:layout_weight=".55"
+                    android:gravity="left|center"
+                    android:text="Remarks(Any deviation observed/ Action taken):"
                     android:textColor="@color/textViewColor"
-                    android:textSize="16sp" />
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
 
                 <EditText
                     android:id="@+id/editText13"
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
-                    android:layout_weight=".26"
+                    android:layout_weight=".45"
                     android:ems="10"
-                    android:inputType="text"
-                    android:textSize="14sp" />
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="20dp">
-
-                <TextView
-                    android:id="@+id/textView43"
-                    android:layout_width="0dp"
-                    android:layout_height="match_parent"
-                    android:layout_weight=".09"
-                    android:text="4.0"
-                    android:textAlignment="center"
-                    android:textColor="@color/textViewColor"
-                    android:textSize="14sp" />
-
-                <TextView
-                    android:id="@+id/textView44"
-                    android:layout_width="0dp"
-                    android:layout_height="match_parent"
-                    android:layout_weight=".35"
-                    android:text="Remarks: "
-                    android:textStyle="bold"
-                    android:textColor="@color/textViewColor" />
-
-                <EditText
-                    android:id="@+id/editText14"
-                    android:layout_width="0dp"
-                    android:layout_height="match_parent"
-                    android:layout_weight="0.56"
-                    android:ems="10"
-                    android:inputType="textMultiLine"
                     android:hint="Enter Remark here"
-                    android:textColor="@color/textViewColor" />
-
+                    android:inputType="textMultiLine"
+                    android:textSize="14sp" />
             </LinearLayout>
 
             <GridLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="20dp">
+                android:layout_height="wrap_content">
 
                 <Button
                     android:id="@+id/button1"
@@ -723,9 +675,9 @@
                     android:layout_height="wrap_content"
                     android:layout_row="0"
                     android:layout_column="0"
-                    android:gravity="center"
                     android:layout_gravity="center_horizontal"
                     android:backgroundTint="@color/teal_700"
+                    android:gravity="center"
                     android:text="Submit Schedule" />
 
                 <Button
@@ -734,9 +686,9 @@
                     android:layout_height="wrap_content"
                     android:layout_row="0"
                     android:layout_column="0"
-                    android:gravity="center"
                     android:layout_gravity="center_horizontal"
                     android:backgroundTint="@color/teal_700"
+                    android:gravity="center"
                     android:text="Sign Document" />
 
             </GridLayout>
@@ -744,17 +696,17 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:gravity="center"
-                android:layout_marginTop="10dp"
-                android:layout_marginBottom="10dp">
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="10dp"
+                android:gravity="center">
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
-                    android:textStyle="bold|italic"
+                    android:text="Form Created by: Vipin K. Singh"
                     android:textColor="@color/textViewColor"
-                    android:text="Form Created by: Vipin K Singh"
-                    android:textSize="14sp"/>
+                    android:textSize="14sp"
+                    android:textStyle="bold|italic" />
 
             </LinearLayout>
 

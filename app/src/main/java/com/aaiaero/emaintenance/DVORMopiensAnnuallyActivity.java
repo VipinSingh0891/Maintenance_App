@@ -57,7 +57,7 @@ public class DVORMopiensAnnuallyActivity extends AppCompatActivity {
         //Define and Initialize all EditTexts serially here
 
         EditText editText1, editText2, editText3, editText4, editText5, editText6, editText7, editText8,
-                editText9, editText10, editText11, editText12, editText13, editText14;
+                editText9, editText10, editText11, editText12, editText13;
 
         editTextArray =  new EditText[]{editText1 = (EditText) findViewById(R.id.editText1),
                 editText2 = (EditText) findViewById(R.id.editText2),
@@ -71,8 +71,7 @@ public class DVORMopiensAnnuallyActivity extends AppCompatActivity {
                 editText10 = (EditText) findViewById(R.id.editText10),
                 editText11 = (EditText) findViewById(R.id.editText11),
                 editText12 = (EditText) findViewById(R.id.editText12),
-                editText13 = (EditText) findViewById(R.id.editText13),
-                editText14 = (EditText) findViewById(R.id.editText14)};
+                editText13 = (EditText) findViewById(R.id.editText13)};
 
         //Define and Initialize all Switches serially here
 
@@ -80,14 +79,20 @@ public class DVORMopiensAnnuallyActivity extends AppCompatActivity {
 
         //---------------------To Set View in Current Activity------------------
         // Fixed for all the activity---------------------------------------------------------------
+        TextView textView1 = (TextView) findViewById(R.id.textView1);
+        textView1.setText("Name: " + PersonalDetailsActivity.naam);
+        TextView textView2 = (TextView) findViewById(R.id.textView2);
+        textView2.setText("Designation: " + PersonalDetailsActivity.design);
         TextView textView3 = (TextView) findViewById(R.id.textView3);
-        textView3.setText("Name: " + PersonalDetailsActivity.naam);
+        textView3.setText("Emp No.: " + PersonalDetailsActivity.EmpID);
         TextView textView4 = (TextView) findViewById(R.id.textView4);
-        textView4.setText("Designation: " + PersonalDetailsActivity.design);
-        TextView textView5 = (TextView) findViewById(R.id.textView5);
-        textView5.setText("Emp No.: " + PersonalDetailsActivity.EmpID);
-        TextView textView6 = (TextView) findViewById(R.id.textView6);
-        textView6.setText("Location: " + MainActivity.latLong1);
+        textView4.setText("Location: " + MainActivity.latLong1);
+
+        TextView textViewDate = (TextView) findViewById(R.id.textViewDate);
+        Calendar calendar = Calendar.getInstance();
+        SimpleDateFormat sdf = new SimpleDateFormat("dd:MM:yyyy HH:mm");
+        String strData = sdf.format(calendar.getTime());
+        textViewDate.setText(strData);
 
         Intent receivedIntent = getIntent();
         //now get the itemID we passed as an extra
@@ -178,7 +183,7 @@ public class DVORMopiensAnnuallyActivity extends AppCompatActivity {
 
         canvas.drawBitmap(scaledbmp,0 , 0, paint);
 
-        titlePaint.setTextSize(30);
+        titlePaint.setTextSize(12);
         paint.setTextAlign(Paint.Align.LEFT);
         //canvas.drawText("Name: " + PersonalDetailsActivity.naam ,1500,32,titlePaint);
         //canvas.drawText("Desig: " + PersonalDetailsActivity.design ,1500,64,titlePaint);
@@ -187,10 +192,10 @@ public class DVORMopiensAnnuallyActivity extends AppCompatActivity {
         //canvas.drawBitmap(PersonalDetailsActivity.photo, 1630, 130, paint);
         //--------------------------------Change as per your requirement------------------------------------------------------
         // canvas.drawBitmap(Bitmap.createScaledBitmap(PersonalDetailsActivity.sigNature,500,510, false), 1325, 2720, paint);
-        titlePaint.setTextSize(30);
+        titlePaint.setTextSize(12);
 
-        int[] editTextXPixel1 = {140,360,212,360,483,483,483,483,483,483,483,483,483,200};
-        int[] editTextYPixel1 = {155,155,186,186,186,275,315,395,415,435,470,505,560,590};
+        int[] editTextXPixel1 = {140,360,212,360,483,483,483,483,483,483,483,483,200};
+        int[] editTextYPixel1 = {155,155,186,186,275,315,395,415,435,470,505,560,593};
 
         //int[] spinnerXPixel = {1400,1400,1400,1400,1400,1400,1400,1400,1400};
         //int[] spinnerYPixel = {1070,1143,1216,1289,1362,1435,1550,1690,1901};
@@ -215,11 +220,11 @@ public class DVORMopiensAnnuallyActivity extends AppCompatActivity {
         // Fixed till here--------------------------------------------------------------------------
 
         // Change as per your requirement-----------------------------------------------------------
-        titlePaint.setTextSize(40);
+        titlePaint.setTextSize(12);
 
-        //canvas.drawText(strData,1568,425,titlePaint);//Printing Date on PDF
+        canvas.drawText(strData,483,186,titlePaint);//Printing Date on PDF
 
-        canvas.drawBitmap(Bitmap.createScaledBitmap(PersonalDetailsActivity.sigNature, 290, 270, false), 410, 666, paint);
+        canvas.drawBitmap(Bitmap.createScaledBitmap(PersonalDetailsActivity.sigNature, 290, 270, false), 102, 633, paint);
         myPdfdocument.finishPage(myPage1);
 
         //---------------------End of Page 1---------------
@@ -229,14 +234,14 @@ public class DVORMopiensAnnuallyActivity extends AppCompatActivity {
                 Manifest.permission.WRITE_EXTERNAL_STORAGE}, PackageManager.PERMISSION_GRANTED);
 
 
-        String directory_path = Environment.getExternalStorageDirectory().getPath() + "/Maintenance Schedules/Nav-Aids/DVOR/Annually/";// Change Here------------------
+        String directory_path = Environment.getExternalStorageDirectory().getPath() + "/Maintenance Schedules/Nav-Aids/DVOR/Yearly/";// Change Here------------------
         File file = new File(directory_path);
         if (!file.exists()) {
             file.mkdirs();
         }
         //String targetPdf = directory_path + "test.pdf";
         //String fileName = "Daily ADSB " + dateFormat.format(dateObj) + ".pdf";
-        String fileName = "Annually DVOR " + strData + ".pdf"; // Change Here--------------------------
+        String fileName = "Yearly DVOR " + strData + ".pdf"; // Change Here--------------------------
         String targetPdf = directory_path + fileName;
         File filePath = new File(targetPdf);
         try {
@@ -251,12 +256,12 @@ public class DVORMopiensAnnuallyActivity extends AppCompatActivity {
         String specificCode = new SimpleDateFormat("dd-MM-yyyy", Locale.getDefault()).format(new Date());// Change Here----------------------------
         //This function saves all the data to parse Server
         //myFunctions.saveToParse(String targetPdf, String fileName, String Equipment,String Schedule_Type,String EditTextData)
-        myFunctions.saveToParse(targetPdf, fileName,"DVOR_MOPIENS_MARU220","Annually",outputEditText,MyFunctions.specificCode("y"),"outputSwitch", "outputSpinner");// Change Here-----------------------
+        myFunctions.saveToParse(targetPdf, fileName,"DVOR","Yearly",outputEditText,MyFunctions.specificCode("y"),"outputSwitch", "outputSpinner");// Change Here-----------------------
 
         // This function will send eMail using JavaMailAPI
         //myFunctions.sendEmail(String To, String Subject, String Message,String targetPdf,String desired_Filename)
         myFunctions.sendEmail(PersonalDetailsActivity.emailTo + "@aai.aero",
-                "Annually Maintenance of Mopiens DVOR done.",//Change Here-----------------------------
+                "Yearly Maintenance of Mopiens DVOR done.",//Change Here-----------------------------
                 "Maintenance Schedule is attached. Please verify.", targetPdf, fileName);
 
 
